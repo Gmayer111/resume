@@ -3,56 +3,57 @@ import 'assets/Styles/Header.scss';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+    
     return (
         <header>
-            <div class="headUp">
-                <div class="imgProfil">
+            <div className="headUp">
+                <div className="imgProfil">
                     <span>GAEL MAYER</span>
                 </div>
                 <ul>
                     <li>
-                        <div class="icon">
-                            <i class="fas fa-house-user"></i>
+                        <div className="icon">
+                            <i className="fas fa-house-user"></i>
                         </div>
-                        <div class="text">
-                            <Link class="link" to="/">ACCUEIL</Link>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="text">
-                            <Link class="link" to="/about">A PROPOS</Link>
+                        <div className="text">
+                            <Link className="link" to="/">ACCUEIL</Link>
                         </div>
                     </li>
                     <li>
-                        <div class="icon">
-                            <i class="fas fa-university"></i>
+                        <div className="icon">
+                            <i className="fas fa-user"></i>
                         </div>
-                        <div class="text">
-                            <Link class="link" to="/resume">PARCOURS</Link>
+                        <div className="text">
+                            <Link className="link" to="/about">A PROPOS</Link>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="icon">
+                            <i className="fas fa-university"></i>
+                        </div>
+                        <div className="text">
+                            <Link className="link" to="/resume">PARCOURS</Link>
                         </div> 
                     </li>
                     <li>
-                        <div class="icon">
-                            <i class="fas fa-briefcase"></i>
+                        <div className="icon">
+                            <i className="fas fa-briefcase"></i>
                         </div>
-                        <div class="text">
-                            <Link class="link" to="/portofolio">PORTFOLIO</Link>
+                        <div className="text">
+                            <Link className="link" to="/portfolio">PORTFOLIO</Link>
                         </div>
                     </li>
                     <li>
-                        <div class="icon">
-                            <i class="fas fa-envelope"></i>
+                        <div className="icon">
+                            <i className="fas fa-envelope"></i>
                         </div>
-                        <div class="text">
-                            <Link class="link" to="/contact">CONTACT</Link>
+                        <div className="text">
+                            <Link className="link" to="/contact">CONTACT</Link>
                         </div>
                     </li>
                 </ul>                
             </div>
-            <div class="headDown">
+            <div className="headDown">
                 <div>
                     <i class="fab fa-linkedin"></i>
                     <i class="fab fa-github"></i>
