@@ -44,9 +44,9 @@ const App = () => {
 }
 
 const Wrapper = styled.div`
-  min-height: 100%;
+  height: 100%;
   font-size: 16px;
-  background-color: grey;
+  background-color: #2c2d2f;
   display: grid;
   grid-template-columns: 15vw auto;
   grid-template-rows: 70vh 30vh auto;
@@ -57,7 +57,8 @@ const Wrapper = styled.div`
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 4;
-    height: auto;
+    overflow: hidden;
+
   }
   
 `

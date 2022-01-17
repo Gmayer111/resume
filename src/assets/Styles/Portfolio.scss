@@ -1,0 +1,136 @@
+.mainBlock {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+    .blockUp {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+
+        .list {
+            display: flex;
+            border: 1px dashed grey;
+            border-radius: 30px;
+            height: 50px;
+
+            li {
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                color: #ffffff;                
+                list-style: none;
+                border-radius: 30px;
+                padding: 1rem;
+
+            }
+
+            .active {
+                background-color: rgb(82, 189, 231);
+            }
+        }
+
+    }
+
+    .blockDown {
+
+        display: flex;
+        justify-content: space-between;
+
+
+        
+        .site {
+            
+            background-image: url('../Images/restaurant.png');
+            background-size: cover;
+            width: 300px;
+            height: 250px;
+            border-radius: 20px;
+        }
+        
+        h3, h4 {
+            visibility: hidden;
+        }
+
+        .blockText {
+            height: 100%;
+        }
+        
+        .blockText:hover {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 20px;
+            height: 100%;
+            color: #ffffff; 
+            border-radius: 20px;
+            background-color: rgba(0, 163, 225, 0.8);
+
+            
+            h3, h4 {
+                visibility: visible;
+                margin: 1rem;
+            }
+            
+            h3 {
+                font-size: 20px;
+                font-weight: 700;
+                animation: fromUp 0.4s linear infinite alternate;
+                animation-iteration-count: 1;
+            }
+
+            @keyframes fromUp {
+                0% {
+                    transform: translateY(-60px);
+                    opacity: 0;
+                }
+
+                50% {
+                    transform: translateY(-40px);
+                    opacity: 0.40;
+                }
+
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+
+
+
+            h4 {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                animation: fromDown 0.5s linear infinite alternate;
+                animation-iteration-count: 1;
+            }
+
+            @keyframes fromDown {
+                0% {
+                    transform: translateY(80px);
+                    opacity: 0;
+                }
+
+                50% {
+                    transform: translateY(40px);
+                    opacity: 0.40;
+                }
+
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+
