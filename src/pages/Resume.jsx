@@ -5,7 +5,7 @@ import BlockResume from 'components/UI/BlockResume'
 import ResumeTitle from 'components/UI/ResumeTitle'
 import BlockMeasure from 'components/UI/BlockMeasure'
 
-const Resume = () => {
+function Resume() {
     return (
         <FlipPage title={"Parcours professionnel."} logo={<i className="fas fa-university"></i>}>
             <div className='mainBlock'>

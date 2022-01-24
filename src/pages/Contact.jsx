@@ -1,7 +1,7 @@
 import FlipPage from 'components/UI/FlipPage'
 import React from 'react'
 
-const Contact = () => {
+function Contact() {
     return (
         <FlipPage title={"Contact"} logo={<i className="fas fa-envelope"></i>}>
             

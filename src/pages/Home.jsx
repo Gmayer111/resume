@@ -2,7 +2,7 @@ import React from 'react'
 import 'assets/Styles/Home.scss'
 
 
-const Home = () => {
+function Home() {
     return (
         <div className="imgContainer">
             <div className="blockTitle">

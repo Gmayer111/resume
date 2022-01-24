@@ -3,7 +3,7 @@ import "assets/Styles/About.scss"
 import Li from "components/UI/Li"
 import FlipPage from "components/UI/FlipPage"
 
-const About = () => {
+function About() {
 
     return (
         <FlipPage title={"A propos de moi"} logo={<i className="fas fa-user"></i>}>
