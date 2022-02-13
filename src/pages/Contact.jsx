@@ -15,39 +15,6 @@ function Contact() {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        // const data = {
-        //     fullNameRef: fullNameRef.current.value,
-        //     emailRef: emailRef.current.value,
-        //     commentRef: commentRef.current.value 
-        // }
-
-        //alert(JSON.stringify(data))
-
-        // (async function() {
-    
-        //     const url = "http://symfony.localhost/api/contacts";
-        //     const options = {
-        //         method: 'POST',
-        //         body: JSON.stringify({
-        //             fullName: fullNameRef,
-        //             email: emailRef,
-        //             comment: commentRef
-        //         }),
-        //         headers: {
-        //             "Content-type": "application/json"
-        //         }
-                
-        //     }
-        
-        //     const response = await fetch(url, options)
-        //         .then(response => response.json())
-        //         .then(response => {
-        //             console.log(response);
-        //         })
-        //     // const contact = await response.json();
-        //     // console.log(contact);
-        // })();
-
         fetch("http://symfony.localhost/api/contacts", {
             "method": "POST",
             "headers": {
