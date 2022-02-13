@@ -11,6 +11,7 @@ function ResumeTitle(props) {
 
 const Wrapper = styled.div`
 
+   
 
     h2 {
         position: relative;

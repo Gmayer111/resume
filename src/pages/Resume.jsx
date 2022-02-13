@@ -7,8 +7,8 @@ import BlockMeasure from 'components/UI/BlockMeasure'
 
 function Resume() {
     return (
-        <FlipPage title={"Parcours professionnel."} logo={<i className="fas fa-university"></i>}>
-            <div className='mainBlock'>
+        <FlipPage title={"Parcours."} logo={<i className="fas fa-university"></i>}>
+            <div className='main-block-resume'>
                 <div className='blockUp'>
                     <div className="blockLeft">
                         <div>
@@ -68,7 +68,7 @@ function Resume() {
                 </div>
                 <div className="blockDown">
                     <div className="blockDownLeft">
-                        <div>
+                        <div className='block-title'>
                             <ResumeTitle title={'FRONT-END'} />
                         </div>
                         <BlockMeasure 
@@ -81,7 +81,7 @@ function Resume() {
                         />
                         <BlockMeasure 
                             language={'JAVASCRIPT'} 
-                            size={'70'}
+                            size={'90'}
                         />
                         <BlockMeasure 
                             language={'REACT'} 
@@ -89,7 +89,7 @@ function Resume() {
                         />
                     </div>
                     <div className="blockDownRight">
-                        <div>
+                        <div className='block-title'>
                             <ResumeTitle title={'BACK-END'} />
                         </div>
                         <BlockMeasure 

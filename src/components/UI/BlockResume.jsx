@@ -10,6 +10,10 @@ function BlockResume(props) {
                         <span>{props.startDate}</span>
                     </div>
                     <div className='lineLeft'></div>
+                    <div className='block-date-mobile'>
+                        <span>{props.endDate}</span>
+                        <span>{props.startDate}</span>
+                    </div>
                     <div className='blockText'>
                         <h3>{props.titleUp}</h3>
                         <h4>{props.titleDown}</h4>
@@ -50,11 +54,15 @@ const Wrapper = styled.ul`
         font-weight: 400;
     }
 
+    .block-date-mobile {
+        display: none;
+    }
+
     .lineLeft {
         position: relative;
         top: 12px;
         left: 0.5rem;
-        width: 6px;
+        width: 10px;
         height: 150px;
         background-color: #019dd9;
     }
@@ -90,27 +98,64 @@ const Wrapper = styled.ul`
         margin: 3rem;
     }
 
-        h3 {
-            color: #ffffff;
-            font-size: 18px;
-            font-weight: 800;
-            text-transform: uppercase;
+    h3 {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        color: #019dd9;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 12px;
+        height: 100%;
+        margin-top: 0.5rem;
+    }
+
+    p {
+        color: #ffffff;
+        line-height: 1.6rem;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 700px) {
+
+
+        .lineLeft {
+            height: 230px;
         }
 
-        h4 {
-            color: #019dd9;
-            text-transform: uppercase;
-            font-weight: 900;
-            font-size: 12px;
-            height: 100%;
-            margin-top: 0.5rem;
+        .blockDate {
+            display: none;
         }
 
-        p {
+        .block-date-mobile {
+            display: flex;
+            position: relative;
+            left: 1rem;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 255px;
             color: #ffffff;
-            line-height: 1.6rem;
-            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
         }
+
+        .blockText {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 60%;
+            margin: 2rem;
+        }
+    
+
+    }
+
+
 
   
 `

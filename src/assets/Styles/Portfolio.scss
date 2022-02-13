@@ -1,19 +1,20 @@
 .mainBlock {
 
     width: 100%;
-    height: 100%;
+    height: 200vh;
     display: flex;
     flex-direction: column;
 
-
-    .blockUp {
+    .up {
+        
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 100%;
-        height: 200px;
 
         ul {
+            position: relative;
+            top: 4.5rem;
             display: flex;
             border: 1px dashed grey;
             border-radius: 30px;
@@ -25,26 +26,64 @@
                 font-weight: 400;
                 color: #ffffff;                
                 list-style: none;
-                cursor: pointer;
-                padding: 1rem;
-
-            }
-
-            .active, li:active {
-                background-color: rgb(82, 189, 231);
+                padding: 1rem; 
                 border-radius: 30px;
+
+                
+                .btn {
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%;
+                }
+          
             }
         }
-
     }
 
-    .blockDown {
-
+    .down {
+        width: 100%;
+        position: relative;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        bottom: 8rem;
+        top: 7rem;
+    }
+}
 
+@media screen and (max-width: 700px) {
+
+    .mainBlock {
+
+        height: 280vh;
+
+    .up {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    
+        ul {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            border: none;
+            height: 100px;  
+            position: relative;
+            
+            li {
+                padding: 1rem; 
+                border-radius: 30px;
+    
+            }
+        }
+    }
+
+    .down {
+        bottom: 10rem;
     }
 }
 
 
+}
 

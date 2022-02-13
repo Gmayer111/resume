@@ -1,0 +1,173 @@
+.main-block-contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    .blockUp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15%;
+        margin-bottom: 3rem;
+    }    
+
+    .blockDown {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            
+            
+            .formUp {
+                display: flex;
+                justify-content: space-between;
+
+                .fields-text {
+                    width: 40%;
+                }
+                
+            }
+
+            .formDown {
+                display: flex;
+                flex-direction: column;
+                margin-top: 4rem;
+                align-items: center;
+
+                button {
+                    position: relative;
+                    margin-top: 2rem;
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 0;
+                    background-color: rgba(255, 255, 255, 0);
+                    border: 2px solid rgb(0, 161, 224);
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: #00a1df; 
+                    cursor: pointer;
+                    background-image: linear-gradient(rgb(0, 161, 224), rgb(0, 161, 224));
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 100%;
+                    transition: background-size .5s, color .5s;
+                }
+
+                button:hover {
+                    background-size: 100% 100%;
+                    color: black;
+                }
+                
+            }
+
+
+            span {
+                position: relative;
+                
+                input, textarea[type=text] {
+                        position: relative;
+                        width: 100%;
+                        padding: 0.3rem;
+                        background-color: rgba(255, 255, 255, 0); 
+                        border: 2px solid #999999;
+                        box-sizing: border-box;
+                        outline: none;
+                        border-color: #ffffff;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #ffffff;  
+                    }
+                
+         
+
+ 
+                    input:focus ~ .labelName, textarea[type=text]:focus ~ .labelName {
+                        animation: moveLabelUp 0.5s;
+                        animation-iteration-count: 1;
+                        animation-fill-mode: forwards;
+                        pointer-events: fill;
+
+                    }
+
+                    input:not(:placeholder-shown) ~ .labelName, textarea:not(:placeholder-shown) ~ .labelName {
+                        transform: translateY(-37px);
+                        transition: none;
+                        animation: none;
+                        font-size: 14px;
+                      }
+                      
+             
+                    
+                    .labelName {
+                        z-index: 0;
+                        pointer-events:all;
+                        position: absolute;
+                        top: 0.8rem;
+                        left: 0.5rem;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #ffffff;  
+                        opacity: 1;
+                    }
+                
+                
+                    @keyframes moveLabelUp {
+                        from {
+                            transform: translateY(0);
+                            font-size: 16px;
+                        }
+                
+                        to {
+                            transform: translateY(-37px);
+                            font-size: 14px;
+                        }
+                    } 
+
+
+            }
+        
+
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .main-block-contact {
+
+        .blockDown {
+
+            form {
+                width: 100%;
+
+                .formUp {
+                    flex-direction: column;
+                    justify-content: space-around;
+                    height: 120px;
+                    
+                    .fields-text {
+                        width: 100%;
+                    }
+                    
+                }
+
+                .formDown {
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+

@@ -4,33 +4,42 @@ import 'assets/Styles/tilt.scss'
 
 function TiltCard(props) {
 
+
+
     const onpenInNewTab = (url) => {
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
         if (newWindow) newWindow.opener = null
     }
+    const content = props.tiltvalues.map((tiltvalue) => 
 
-
-
-    return (
         <Tilt options={{ scale: 2}} style={{}}>
-            <button onClick={() => onpenInNewTab(`${props.location}`)} target="_blank" rel="noopener noreferrer">
-                
+            <button 
+                onClick={() => onpenInNewTab(`${tiltvalue.link}`)} target="_blank" rel="noopener noreferrer"
+                key={tiltvalue.id}    
+            >  
                 <div className='site' style={{ 
-                    backgroundImage: `url(${props.backgroundImage})` }}>
+                    backgroundImage: `url(${tiltvalue.picture})` }}>
                     <div 
                         className='blockText'
                         >
                         <div>
-                            <h3 className='ht'>{props.titleUp}</h3>
-                            <h4 className='hf'>{props.titleDown}</h4>                                    
+                            <h3 className='ht'>{tiltvalue.title}</h3>
+                            <h4 className='hf'>{tiltvalue.language}</h4>                                    
                         </div>
                         <div className='icone'>
-                            { props.icon }
+                            { tiltvalue.logo }
                         </div>
                     </div>
                 </div>                        
             </button>
-        </Tilt> 
+        </Tilt>          
+    )
+
+    return (
+        <div className='blockDown'>
+            {content}
+        </div>
+
     )
 }
 

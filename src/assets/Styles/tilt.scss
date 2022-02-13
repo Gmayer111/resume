@@ -1,16 +1,22 @@
+.blockDown {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+
         button {
             margin: 0;
             padding: 0;
             border-radius: 20px;
             border: 0;
+            margin-bottom: 1.5rem;
 
             .site {
                 background-size: cover;
-                width: 300px;
+                width: 290px;
                 height: 250px;
                 border-radius: 20px;
-
-
 
                 .blockText {
                     height: 100%;
@@ -112,4 +118,7 @@
                     }
                 }
             }
-        }
+    }  
+
+}
+
