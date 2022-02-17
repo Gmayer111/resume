@@ -1,0 +1,132 @@
+.main-block-resume {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.main-block-resume .blockUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin-top: 3rem;
+}
+
+.main-block-resume .blockUp .blockLeft, .main-block-resume .blockUp .blockRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-block-resume .blockUp ul {
+  position: relative;
+  top: 4rem;
+}
+
+.main-block-resume .blockDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.main-block-resume .blockDown .blockDownLeft, .main-block-resume .blockDown .blockDownRight {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-block-resume .blockDown .blockDownLeft .block-title, .main-block-resume .blockDown .blockDownRight .block-title {
+  margin-bottom: 2rem;
+}
+
+.main-block-resume .blockDown .blockDownLeft .blockMeasure, .main-block-resume .blockDown .blockDownRight .blockMeasure {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+}
+
+.main-block-resume .blockDown .blockDownLeft .blockMeasure span, .main-block-resume .blockDown .blockDownRight .blockMeasure span {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  position: relative;
+  bottom: 1rem;
+}
+
+.main-block-resume .blockDown .blockDownLeft .blockMeasure .measure, .main-block-resume .blockDown .blockDownRight .blockMeasure .measure {
+  width: 85%;
+  height: 12px;
+  background-color: #404144;
+}
+
+@media screen and (max-width: 700px) {
+  .main-block-resume .blockUp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .main-block-resume .blockUp ul {
+    position: relative;
+    top: 4rem;
+  }
+  .main-block-resume .blockUp .blockRight {
+    position: relative;
+    margin-top: 2rem;
+  }
+  .main-block-resume .blockDown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-block-resume .blockDown .blockDownLeft, .main-block-resume .blockDown .blockDownRight {
+    width: 100%;
+  }
+  .main-block-resume .blockDown .blockDownRight {
+    margin-top: 2rem;
+  }
+}
+/*# sourceMappingURL=Resume.css.map */

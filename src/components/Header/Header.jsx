@@ -68,8 +68,13 @@ const Header = (props) => {
             </div>
             <div className="headDown">
                 <div>
-                    <i class="fab fa-linkedin icon"></i>
-                    <i class="fab fa-github icon"></i>
+                    <a href="https://www.linkedin.com/in/ga%C3%ABl-mayer-923428b4/" target="_blank" rel="noopener noreferrer">
+
+                    <i className="fab fa-linkedin icon"></i>
+                    </a>
+                    <a href="https://github.com/Gmayer111" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-github icon"></i>
+                    </a>
                 </div>
                 <span>Site inspired by watson-vcard.netlify.app/index-dark-particles1.html</span>
               

@@ -1,7 +1,7 @@
 import React from 'react';
 import 'assets/Styles/FlipPage.scss'
 
-function FlipPage(props) {
+export default function FlipPage(props) {
 
   return(
     <div className='main-container'>
@@ -23,7 +23,3 @@ function FlipPage(props) {
   )
 
 }
-
-
-
-export default FlipPage;

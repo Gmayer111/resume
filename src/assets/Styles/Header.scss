@@ -17,9 +17,9 @@ header {
         font-weight: 400;
         
         .imgProfil {
-            background-color: indigo;
-            background-image: url('../Images/profil.png');
+            background-image: url('../Images/profil.jpg');
             background-size: cover;
+            background-position: 100%;
             width: auto;
             height: 200px;
             font-family: 'Playfair Display', serif;
@@ -39,7 +39,6 @@ header {
         }
         
         ul {
-            background-color: #17181b;
             height: 50vh;
             
             
@@ -90,6 +89,10 @@ header {
         .icon {
             font-size: 1.2em;
             color: #777777;
+        }
+
+        .icon:hover {
+            color: #ffffff;
         }
         
 

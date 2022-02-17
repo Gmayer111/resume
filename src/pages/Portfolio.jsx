@@ -2,6 +2,9 @@ import FlipPage from 'components/UI/FlipPage'
 import React, { useEffect, useState } from 'react'
 import 'assets/Styles/Portfolio.scss';
 import Restaurant from 'assets/Images/restaurant.png'
+import Chair from 'assets/Images/chair.png'
+import Mariage from 'assets/Images/mariage.png'
+import Time from 'assets/Images/time.png'
 import TiltCard from 'components/UI/TiltCard';
 
 function Portfolio() {
@@ -18,19 +21,15 @@ function Portfolio() {
         color: 'black'
     } 
     
-    let desactiveBtn = {
-        backgroundColor: '',
-    }   
+    // let desactiveBtn = {
+    //     backgroundColor: '',
+    // }   
 
     let tiltvalues = [
           {id: 1, title: 'Restaurant Van Long', picture: Restaurant, language: 'Wordpress', link: 'https://van-long.fr/', logo: <i class="fab fa-wordpress"></i>},
-          {id: 2, title: 'Time tracking dashboard', picture: Restaurant, language: 'Wordpress', link: 'https://nervous-visvesvaraya-609593.netlify.app/', logo: <i class="fab fa-wordpress"></i>},
-          {id: 3, title: 'Mariage', picture: Restaurant, language: 'Wordpress', link: 'https://van-long.fr/', logo: <i class="fab fa-wordpress"></i>},
-          {id: 1, title: 'Restaurant Van Long', picture: Restaurant, language: 'Javascript', link: 'https://van-long.fr/', logo: <i class="fab fa-wordpress"></i>},
-          {id: 2, title: 'Time tracking dashboard', picture: Restaurant, language: 'Javascript', link: 'https://nervous-visvesvaraya-609593.netlify.app/', logo: <i class="fab fa-wordpress"></i>},
-          {id: 3, title: 'Mariage', picture: Restaurant, language: 'Javascript', link: 'https://van-long.fr/', logo: <i class="fab fa-wordpress"></i>},
-          {id: 1, title: 'Restaurant Van Long', picture: Restaurant, language: 'Symfony', link: 'https://van-long.fr/', logo: <i class="fab fa-wordpress"></i>},
-          {id: 2, title: 'Time tracking dashboard', picture: Restaurant, language: 'Symfony', link: 'https://nervous-visvesvaraya-609593.netlify.app/', logo: <i class="fab fa-wordpress"></i>},
+          {id: 2, title: 'Time tracking dashboard', picture: Time, language: 'Javascript', link: 'https://confident-hamilton-fd4b0e.netlify.app/', logo: <i class="fab fa-js"></i>},
+          {id: 3, title: 'Mariage', picture: Mariage, language: 'Symfony', link: 'https://ngocmy-et-gael.fr/', logo: <i class="fab fa-symfony"></i>},
+          {id: 1, title: 'Room Home Page', picture: Chair, language: 'Javascript', link: 'https://amazing-gates-9da9b3.netlify.app/', logo: <i class="fab fa-js"></i>},
       ]
     
     let tiltArrays = [];
@@ -67,7 +66,7 @@ function Portfolio() {
             <div className='mainBlock'>
                 <div className='up'>
                 <ul>
-                    <li style={changeColorAll === true ? activeBtn : desactiveBtn}>            
+                    <li style={changeColorAll === true ? activeBtn : null}>            
                         <div 
                             className='btn'
                             onClick={() => {
@@ -81,7 +80,7 @@ function Portfolio() {
                             TOUT
                         </div>
                     </li>
-                    <li style={changeColorWp === true ? activeBtn : desactiveBtn}>            
+                    <li style={changeColorWp === true ? activeBtn : null}>            
                         <div 
                             className='btn'
                             onClick={() => {
@@ -95,7 +94,7 @@ function Portfolio() {
                             WORDPRESS
                         </div>
                     </li>
-                    <li style={changeColorJs === true ? activeBtn : desactiveBtn}>            
+                    <li style={changeColorJs === true ? activeBtn : null}>            
                         <div 
                             className='btn' 
                             onClick={() => {
@@ -109,7 +108,7 @@ function Portfolio() {
                             JAVASCRIPT
                         </div>
                     </li>
-                    <li style={changeColorSf === true ? activeBtn : desactiveBtn}>            
+                    <li style={changeColorSf === true ? activeBtn : null}>            
                         <div 
                             className='btn' 
                             onClick={() => {

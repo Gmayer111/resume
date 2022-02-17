@@ -1,0 +1,204 @@
+.main-block-contact {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.main-block-contact .blockUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15%;
+  margin-bottom: 3rem;
+}
+
+.main-block-contact .blockDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-block-contact .blockDown form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+
+.main-block-contact .blockDown form .formUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-block-contact .blockDown form .formUp .fields-text {
+  width: 40%;
+}
+
+.main-block-contact .blockDown form .formDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-block-contact .blockDown form .formDown button {
+  position: relative;
+  margin-top: 2rem;
+  width: 150px;
+  height: 40px;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #00a1e0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #00a1df;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00a1e0), to(#00a1e0));
+  background-image: linear-gradient(#00a1e0, #00a1e0);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size .5s, color .5s;
+  transition: background-size .5s, color .5s;
+}
+
+.main-block-contact .blockDown form .formDown button:hover {
+  background-size: 100% 100%;
+  color: black;
+}
+
+.main-block-contact .blockDown form span {
+  position: relative;
+}
+
+.main-block-contact .blockDown form span input, .main-block-contact .blockDown form span textarea[type=text] {
+  position: relative;
+  width: 100%;
+  padding: 0.3rem;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #999999;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.main-block-contact .blockDown form span input:focus ~ .labelName, .main-block-contact .blockDown form span textarea[type=text]:focus ~ .labelName {
+  -webkit-animation: moveLabelUp 0.5s;
+          animation: moveLabelUp 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  pointer-events: fill;
+}
+
+.main-block-contact .blockDown form span input:not(:placeholder-shown) ~ .labelName, .main-block-contact .blockDown form span textarea:not(:placeholder-shown) ~ .labelName {
+  -webkit-transform: translateY(-37px);
+          transform: translateY(-37px);
+  -webkit-transition: none;
+  transition: none;
+  -webkit-animation: none;
+          animation: none;
+  font-size: 14px;
+}
+
+.main-block-contact .blockDown form span .labelName {
+  z-index: 0;
+  pointer-events: all;
+  position: absolute;
+  top: 0.8rem;
+  left: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  opacity: 1;
+}
+
+@-webkit-keyframes moveLabelUp {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    font-size: 16px;
+  }
+  to {
+    -webkit-transform: translateY(-37px);
+            transform: translateY(-37px);
+    font-size: 14px;
+  }
+}
+
+@keyframes moveLabelUp {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    font-size: 16px;
+  }
+  to {
+    -webkit-transform: translateY(-37px);
+            transform: translateY(-37px);
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-block-contact .blockDown form {
+    width: 100%;
+  }
+  .main-block-contact .blockDown form .formUp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 120px;
+  }
+  .main-block-contact .blockDown form .formUp .fields-text {
+    width: 100%;
+  }
+  .main-block-contact .blockDown form .formDown {
+    margin-top: 2rem;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */

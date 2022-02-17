@@ -15,7 +15,8 @@ const Wrapper = styled.div`
         font-family: 'Playfair Display', serif;
         font-size: 16px;
         font-weight: 700;
-        text-decoration: underline;
+        text-decoration: #00a3e1 underline;
+        text-decoration-thickness: 2px;
     }
 
     .info {

@@ -62,7 +62,7 @@ const Wrapper = styled.ul`
         position: relative;
         top: 12px;
         left: 0.5rem;
-        width: 10px;
+        width: 5px;
         height: 150px;
         background-color: #019dd9;
     }
@@ -118,6 +118,7 @@ const Wrapper = styled.ul`
         color: #ffffff;
         line-height: 1.6rem;
         width: 100%;
+        margin-top: 0.5rem;
     }
 
     @media screen and (max-width: 700px) {

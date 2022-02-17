@@ -20,25 +20,25 @@ function Resume() {
                                 startDate={'2018'}
                                 titleUp={'Forfaitiste'}
                                 titleDown={'Tour opérateur Asia'}
-                                content={'In many places, there are folktales of stardust falling into the ocean and becoming Staryu.Its fangs are so sharp, if it bites you in the dark.'}
+                                content={'Je réalise des circuits sur-mesure et à la carte sur le continent asiatique et océanique. je dois prendre en considération les attentes des clients.'}
                             />
                         </div>
                         <div>
                             <BlockResume 
-                                endDate={'2022'}
-                                startDate={'2018'}
-                                titleUp={'Forfaitiste'}
-                                titleDown={'Tour opérateur Asia'}
-                                content={'In many places, there are folktales of stardust falling into the ocean and becoming Staryu.Its fangs are so sharp, if it bites you in the dark.'}
+                                endDate={'2018'}
+                                startDate={'2015'}
+                                titleUp={'Agent de voyages / Billettiste (plateau d\'affaires)'}
+                                titleDown={'Saint Léger Voyages & Allées Venues'}
+                                content={'Sociétés dans lesquelles j\'ai pû faire mon alternance, je m\'occupai de l\'achat de billets sur GDS pour une clientèle haut de gamme.'}
                             />                                
                         </div>    
                         <div>
                             <BlockResume 
-                                endDate={'2022'}
-                                startDate={'2018'}
-                                titleUp={'Forfaitiste'}
-                                titleDown={'Tour opérateur Asia'}
-                                content={'In many places, there are folktales of stardust falling into the ocean and becoming Staryu.Its fangs are so sharp, if it bites you in the dark.'}
+                                endDate={'2015'}
+                                startDate={'2011'}
+                                titleUp={'Chef de rang / VVT Australie'}
+                                titleDown={'Elysée Lenôtre & Restaurant Australie'}
+                                content={'Durant ces années j\'ai pû mettre à profit mon expérience acquise au cours de mon alternance dans la restauration dans des grandes brasseries parisiennes ainsi qu\'à l\'étranger.'}
                             />                                
                         </div>
                     </div>
@@ -49,19 +49,28 @@ function Resume() {
                         <div>
                             <BlockResume 
                                 endDate={'2022'}
-                                startDate={'2018'}
-                                titleUp={'Forfaitiste'}
-                                titleDown={'Tour opérateur Asia'}
-                                content={'In many places, there are folktales of stardust falling into the ocean and becoming Staryu.Its fangs are so sharp, if it bites you in the dark.'}
+                                startDate={'2021'}
+                                titleUp={'Développeur Web Full Stack'}
+                                titleDown={'Digital Campus (Studi)'}
+                                content={'Titre de niveau 5 reconnu par l\'état pour devenir développeur Web front-end / back-end.'}
                             />
                         </div>
                         <div>
                             <BlockResume 
-                                endDate={'2022'}
-                                startDate={'2018'}
-                                titleUp={'Forfaitiste'}
-                                titleDown={'Tour opérateur Asia'}
-                                content={'In many places, there are folktales of stardust falling into the ocean and becoming Staryu.Its fangs are so sharp, if it bites you in the dark.'}
+                                endDate={'2018'}
+                                startDate={'2017'}
+                                titleUp={'Licence professionnelle dans la production touristique'}
+                                titleDown={'Paris School of Tourism & Communication'}
+                                content={'Diplômes reconnu par l\'état pour devenir chef de produits touristiques. Négociation des contrats avec les réceptifs étrangers et réalisation de circuit incluant les diverses commissions.'}
+                            />
+                        </div>
+                        <div>
+                            <BlockResume 
+                                endDate={'2013'}
+                                startDate={'2011'}
+                                titleUp={'Bac Proffessionnelle Services et accueil'}
+                                titleDown={'Ecole de Paris des métiers de la table'}
+                                content={'Diplôme permettant d\'apprendre la relation client pour devenir chargé d\'accueil, conseiller client ou dans le service après-vente.'}
                             />                                
                         </div>
                     </div>
@@ -73,7 +82,7 @@ function Resume() {
                         </div>
                         <BlockMeasure 
                             language={'HTML5'}
-                            size={'80'}
+                            size={'90'}
                         />
                         <BlockMeasure 
                             language={'CSS / SASS'} 
@@ -81,11 +90,11 @@ function Resume() {
                         />
                         <BlockMeasure 
                             language={'JAVASCRIPT'} 
-                            size={'90'}
+                            size={'70'}
                         />
                         <BlockMeasure 
                             language={'REACT'} 
-                            size={'70'}
+                            size={'60'}
                         />
                     </div>
                     <div className="blockDownRight">
@@ -98,11 +107,11 @@ function Resume() {
                         />
                         <BlockMeasure 
                             language={'MYSQL'} 
-                            size={'70'}
+                            size={'80'}
                         />
                         <BlockMeasure 
                             language={'SYMFONY'} 
-                            size={'70'}
+                            size={'60'}
                         />
                     </div>
                 </div>

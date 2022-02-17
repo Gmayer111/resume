@@ -23,7 +23,7 @@ const App = () => {
     enter: { 
       opacity: 1,transform: 'perspective(8000px) rotateY(0deg)',
     },
-    config: { mass: 3, tension: 1000, friction: 400 },
+    config: { mass: 3, tension: 700, friction: 400 },
   })
 
   const [displayHeader, setDisplayHeader] = useState(true);
@@ -38,18 +38,18 @@ const App = () => {
   return transitions((props, item) => (
     <>
     <Wrapper className='body-container'>
-      <Header class={displayHeader === true ? 'head' : ''} close={displayHeader}/>
+      <Header className={displayHeader === true ? 'head' : ''} close={displayHeader}/>
       <animated.div style={props} className='mainContainer'>
         <div className='display-block'>
           <span>GAEL MAYER</span>
           <div>
             {displayHeader === false ? 
             <div onClick={() => {setDisplayHeader(true)}}>
-              <i class="fas fa-bars"></i> 
+              <i className="fas fa-bars"></i> 
             </div>
             :
             <div onClick={() => {setDisplayHeader(false)}}>
-              <i class="fas fa-window-close"></i>            
+              <i className="fas fa-window-close"></i>            
             </div>            
           }
           </div>
