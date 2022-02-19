@@ -47,7 +47,7 @@ const Wrapper = styled.ul`
         position: relative;
         flex-direction: column;
         justify-content: space-between;
-        height: 175px;
+        height: 195px;
         color: #ffffff;
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
@@ -62,8 +62,8 @@ const Wrapper = styled.ul`
         position: relative;
         top: 12px;
         left: 0.5rem;
-        width: 5px;
-        height: 150px;
+        width: 3px;
+        height: 170px;
         background-color: #019dd9;
     }
 
@@ -92,9 +92,10 @@ const Wrapper = styled.ul`
 
     .blockText {
         display: flex;
+        width: 100%;
         flex-direction: column;
         justify-content: space-around;
-        height: 60%;
+        height: 70%;
         margin: 3rem;
     }
 

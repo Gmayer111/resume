@@ -54,24 +54,15 @@ function Resume() {
                                 titleDown={'Digital Campus (Studi)'}
                                 content={'Titre de niveau 5 reconnu par l\'état pour devenir développeur Web front-end / back-end.'}
                             />
-                        </div>
+                        </div>  
                         <div>
                             <BlockResume 
                                 endDate={'2018'}
                                 startDate={'2017'}
                                 titleUp={'Licence professionnelle dans la production touristique'}
                                 titleDown={'Paris School of Tourism & Communication'}
-                                content={'Diplômes reconnu par l\'état pour devenir chef de produits touristiques. Négociation des contrats avec les réceptifs étrangers et réalisation de circuit incluant les diverses commissions.'}
+                                content={'Diplômes reconnu par l\'état pour devenir chef de produits touristiques. Négociation des contrats avec les réceptifs étrangers et réalisation de circuits incluant les diverses commissions.'}
                             />
-                        </div>
-                        <div>
-                            <BlockResume 
-                                endDate={'2013'}
-                                startDate={'2011'}
-                                titleUp={'Bac Proffessionnelle Services et accueil'}
-                                titleDown={'Ecole de Paris des métiers de la table'}
-                                content={'Diplôme permettant d\'apprendre la relation client pour devenir chargé d\'accueil, conseiller client ou dans le service après-vente.'}
-                            />                                
                         </div>
                     </div>
                 </div>
@@ -86,15 +77,15 @@ function Resume() {
                         />
                         <BlockMeasure 
                             language={'CSS / SASS'} 
-                            size={'70'}
+                            size={'60'}
                         />
                         <BlockMeasure 
                             language={'JAVASCRIPT'} 
-                            size={'70'}
+                            size={'60'}
                         />
                         <BlockMeasure 
                             language={'REACT'} 
-                            size={'60'}
+                            size={'50'}
                         />
                     </div>
                     <div className="blockDownRight">
@@ -103,7 +94,7 @@ function Resume() {
                         </div>
                         <BlockMeasure 
                             language={'PHP'} 
-                            size={'70'}
+                            size={'60'}
                         />
                         <BlockMeasure 
                             language={'MYSQL'} 
@@ -111,7 +102,7 @@ function Resume() {
                         />
                         <BlockMeasure 
                             language={'SYMFONY'} 
-                            size={'60'}
+                            size={'50'}
                         />
                     </div>
                 </div>

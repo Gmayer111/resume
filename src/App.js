@@ -18,10 +18,10 @@ const App = () => {
   const location = useLocation();
   const transitions = useTransition(location, {
     from: { 
-      opacity: 0, transform: 'perspective(6000px) rotateY(180deg) ',
+      opacity: 0, transform: 'perspective(6000px) rotateY(180deg) scale(0.2, 0.3)',
     },
     enter: { 
-      opacity: 1,transform: 'perspective(8000px) rotateY(0deg)',
+      opacity: 1,transform: 'perspective(8000px) rotateY(0deg) scale(1, 1)',
     },
     config: { mass: 3, tension: 700, friction: 400 },
   })

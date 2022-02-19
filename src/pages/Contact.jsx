@@ -39,9 +39,9 @@ class Contact extends React.Component {
             this.setState({valueMail: ''});
             this.setState({valueComment: ''});
             this.setState({visibility: 'visible'});
-            // setTimeout(() => {
-            //     this.setState({visibility: 'hidden'})
-            // }, 3000)
+            setTimeout(() => {
+                this.setState({visibility: 'hidden'})
+            }, 3000)
         })
         .catch(err => {
             console.log(err);
