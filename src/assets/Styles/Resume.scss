@@ -70,12 +70,16 @@
 @media screen and (max-width: 700px) {
 
     .main-block-resume {
+        height: 350vh;
         
         .blockUp {
             display: flex;
             flex-direction: column;
             width: 100%;
-            height: 100%;
+
+            .blockLeft {
+                width: 100%;
+            }
 
             ul {
                 position: relative;
@@ -85,6 +89,7 @@
             .blockRight {
                 position: relative;
                 margin-top: 2rem;
+                width: 100%;
             }
 
         }
@@ -92,14 +97,12 @@
         .blockDown {
             display: flex;
             flex-direction: column;
+            align-content: flex-start;
         
             .blockDownLeft, .blockDownRight {
                 width: 100%;
             }
 
-            .blockDownRight {
-                margin-top: 2rem;
-            }
         }
     }
 }

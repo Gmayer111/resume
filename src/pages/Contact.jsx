@@ -21,7 +21,7 @@ class Contact extends React.Component {
 
     handleSubmit = (event) => {
         
-        fetch("http://symfony.localhost/api/contacts", {
+        fetch("https://gael-mayer.fr/api/contacts", {
             "method": "POST",
             "headers": {
                 "content-type": "application/json",

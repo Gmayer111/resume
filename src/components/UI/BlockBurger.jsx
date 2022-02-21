@@ -8,7 +8,7 @@ export default function BlockBurger() {
   return (
     <div className='display-block'>
         <span>GAEL MAYER</span>
-        <div><i class="fas fa-bars" onClick={() => {alert('ok')}}></i></div>
+        <div><i class="fas fa-bars"></i></div>
     </div>
   );
 

@@ -53,7 +53,7 @@ function Portfolio() {
     useEffect(() => {
         setShowResult(tiltvalues);
 
-    }, [])
+    }, [tiltvalues])
 
     useEffect(() => {
         setChangeColorAll(true)

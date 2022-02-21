@@ -36,9 +36,10 @@ const App = () => {
 
 
   return transitions((props, item) => (
+    
     <>
     <Wrapper className='body-container'>
-      <Header className={displayHeader === true ? 'head' : ''} close={displayHeader}/>
+      <Header class={displayHeader === true ? 'head' : ''} close={displayHeader}/>
       <animated.div style={props} className='mainContainer'>
         <div className='display-block'>
           <span>GAEL MAYER</span>

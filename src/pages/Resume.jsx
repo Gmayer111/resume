@@ -21,6 +21,8 @@ function Resume() {
                                 titleUp={'Forfaitiste'}
                                 titleDown={'Tour opérateur Asia'}
                                 content={'Je réalise des circuits sur-mesure et à la carte sur le continent asiatique et océanique. je dois prendre en considération les attentes des clients.'}
+                                height='230px'
+                                heightDate='255px'
                             />
                         </div>
                         <div>
@@ -30,6 +32,8 @@ function Resume() {
                                 titleUp={'Agent de voyages / Billettiste (plateau d\'affaires)'}
                                 titleDown={'Saint Léger Voyages & Allées Venues'}
                                 content={'Sociétés dans lesquelles j\'ai pû faire mon alternance, je m\'occupai de l\'achat de billets sur GDS pour une clientèle haut de gamme.'}
+                                height='290px'
+                                heightDate='315px'
                             />                                
                         </div>    
                         <div>
@@ -39,6 +43,8 @@ function Resume() {
                                 titleUp={'Chef de rang / VVT Australie'}
                                 titleDown={'Elysée Lenôtre & Restaurant Australie'}
                                 content={'Durant ces années j\'ai pû mettre à profit mon expérience acquise au cours de mon alternance dans la restauration dans des grandes brasseries parisiennes ainsi qu\'à l\'étranger.'}
+                                height='310px'
+                                heightDate='335px'
                             />                                
                         </div>
                     </div>
@@ -53,6 +59,8 @@ function Resume() {
                                 titleUp={'Développeur Web Full Stack'}
                                 titleDown={'Digital Campus (Studi)'}
                                 content={'Titre de niveau 5 reconnu par l\'état pour devenir développeur Web front-end / back-end.'}
+                                height='200px'
+                                heightDate='225px'
                             />
                         </div>  
                         <div>
@@ -62,6 +70,8 @@ function Resume() {
                                 titleUp={'Licence professionnelle dans la production touristique'}
                                 titleDown={'Paris School of Tourism & Communication'}
                                 content={'Diplômes reconnu par l\'état pour devenir chef de produits touristiques. Négociation des contrats avec les réceptifs étrangers et réalisation de circuits incluant les diverses commissions.'}
+                                height='360px'
+                                heightDate='385px'
                             />
                         </div>
                     </div>
