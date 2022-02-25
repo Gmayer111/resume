@@ -26,7 +26,7 @@ const Header = (props) => {
       }
     
     return (
-        <header className={props.class}>
+        <header className={props.classHead}>
             <div className="headUp">
                 <div className="imgProfil">
                     <span>GAEL MAYER</span>
@@ -56,14 +56,14 @@ const Header = (props) => {
                             <div>PORTFOLIO</div>    
                         </CustomLink>
                     </li>
-                    <li>
+                    {/* <li>
 
                         <CustomLink className="link" to="/contact" onClick={() => {props.close = false}}>
                             <i className="fas fa-envelope"></i>
                             <div>CONTACT</div>    
                         </CustomLink>
 
-                    </li>
+                    </li> */}
                 </ul>                
             </div>
             <div className="headDown">

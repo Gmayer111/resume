@@ -50,7 +50,7 @@
 @media screen and (max-width: 700px) {
 
     .describeContainer {
-        height: 130vh;
+        height: 200vh;
         display: flex;
         flex-direction: column;
 
@@ -70,12 +70,15 @@
 
             ul {
                 margin-top: 0.5rem;
+                height: 100%;
+                width: 100%;
 
                 .blockInfo {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;   
-                    height: 70%; 
+                    height: 60%; 
+                    width: 100%;
                 }
             }
             

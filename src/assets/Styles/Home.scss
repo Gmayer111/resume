@@ -38,35 +38,46 @@
                 color: whitesmoke;               
                 width: 100%;
             
-                .text {
+                .textAnim {
                     display: inline-block;
                     white-space: nowrap;
-                    overflow: hidden;
                     font-weight: bold;
                     height: auto;
                     position: relative;
                     top: 4px;
-                    border-right: 3px solid grey;
-                    animation: moveBorder 1s linear infinite alternate;
-
-                    b {
-                        text-decoration: underline;
-                        font-weight: 700;
-                    }
-
-
-                    @keyframes moveBorder {
-                        from {
-                            max-width: 0rem;
-                        }
-        
-                        to {
-                            max-width: 75%;
-                        }
-                    
-                    }
-
+                    font-weight: 700;
+                    animation: moveBorder 1s linear 2s infinite alternate;
+                    overflow: hidden;
                 }
+                
+                .textFront{
+                    border-right: 3px solid grey;
+                    display: none;
+                    font-weight: 700;
+                    text-decoration: underline;
+                }
+
+                .textBack {
+                    border-right: 3px solid grey;
+                    display: none;
+                    font-weight: 700;
+                    text-decoration: underline;
+                }
+
+
+                @keyframes moveBorder {
+                    from {
+                        max-width: 0;
+                        text-decoration: underline;
+                    }
+
+                    to {
+                        max-width: 100%;
+                        text-decoration: underline;
+                    }
+            
+                }
+
             }
         }
     }

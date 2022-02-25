@@ -3,13 +3,13 @@ import styled from 'styled-components/macro'
 
 function BlockResume(props) {
     return (
-        <Wrapper>
+        <Wrapper height={props.height} heightDate={props.heightDate}>
                 <li>
                     <div className='blockDate'>
                         <span>{props.endDate}</span>
                         <span>{props.startDate}</span>
                     </div>
-                    <div className='lineLeft'></div>
+                    <div className='lineLeft lineHeight'></div>
                     <div className='block-date-mobile'>
                         <span>{props.endDate}</span>
                         <span>{props.startDate}</span>
@@ -125,8 +125,12 @@ const Wrapper = styled.ul`
     @media screen and (max-width: 700px) {
 
 
+
         .lineLeft {
             height: 230px;
+        }
+        .lineHeight {
+            height: ${props => props.height};
         }
 
         .blockDate {
@@ -139,7 +143,7 @@ const Wrapper = styled.ul`
             left: 1rem;
             flex-direction: column;
             justify-content: space-between;
-            height: 255px;
+            height: ${props => props.heightDate};
             color: #ffffff;
             font-family: 'Roboto', sans-serif;
             font-size: 16px;

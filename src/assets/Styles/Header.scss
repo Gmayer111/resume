@@ -118,15 +118,13 @@ header {
 
 @media screen and (max-width: 700px) {
 
-    header {
+    .head-no {
         visibility: hidden;
-
     }
 
     .head {
 		background-color: #17181b;
 		width: 55vw;
-		
 		z-index: 10;
         overflow: auto;
         animation: display 0.5s ease-in-out 2ms 1 forwards;
