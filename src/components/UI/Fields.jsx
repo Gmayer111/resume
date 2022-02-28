@@ -22,8 +22,6 @@ const Wrapper = styled.div`
     position: relative;
     width: 100%;
     margin: 2rem;
-    //overflow: hidden;
-
 
     input[type=text] {
         position: relative;

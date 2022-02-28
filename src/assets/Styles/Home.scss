@@ -46,7 +46,7 @@
                     position: relative;
                     top: 4px;
                     font-weight: 700;
-                    animation: moveBorder 1s linear 2s infinite alternate;
+                    animation: moveBorder 1s linear 2s infinite forwards alternate;
                     overflow: hidden;
                 }
                 
@@ -59,7 +59,6 @@
 
                 .textBack {
                     border-right: 3px solid grey;
-                    display: none;
                     font-weight: 700;
                     text-decoration: underline;
                 }
@@ -105,7 +104,26 @@
             flex-direction: column;
             margin-top: 400px;
         }
+
+        p {
+            display: flex;
+            flex-direction: column;
+
+            
+            .title {
+                font-size: 28px;
+            }
+
+            span {
+                display: flex;
+                justify-content: center;
+                font-size: 22px;
+            }
+
+        }        
     }
+
+
 
 
 }

@@ -22,7 +22,6 @@ export default function Home() {
         function flashChangeText() {
 
             let text = changeText(); 
-            console.log(text);
 
             if (text === 'textFront') {
                 domNodeBack.style.display = 'none'
@@ -46,7 +45,7 @@ export default function Home() {
                     <span className="lastName"> MAYER</span>
                 </h1>
                 <p>
-                    <span>Développeur Web </span>
+                    <span className='title'>Développeur Web </span>
                     <span className='textAnim'>
                         <span className='textAnim textFront' ref={front}>Front-end</span>
                         <span className='textAnim textBack' ref={back}>Back-end</span>                        

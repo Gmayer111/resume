@@ -26,29 +26,27 @@ const App = () => {
     config: { mass: 3, tension: 700, friction: 400 },
   })
 
-  const [displayHeader, setDisplayHeader] = useState(false);
+  const [displayHeader, setDisplayHeader] = useState();
 
 
   useEffect(() => {
-    setDisplayHeader(false)
+    setDisplayHeader('no-head')
   }, [])
-
-
 
   return transitions((props, item) => (
     <>
     <Wrapper className='body-container'>
-      <Header classHead={displayHeader === true ? 'head' : 'head-no'} close={displayHeader}/>
+      <Header classHead={displayHeader}/>
       <animated.div style={props} className='mainContainer'>
         <div className='display-block'>
           <span>GAEL MAYER</span>
           <div>
-            {displayHeader === false ? 
-            <div onClick={() => {setDisplayHeader(true)}}>
+            {displayHeader === 'no-head' ? 
+            <div onClick={() => {setDisplayHeader('head')}}>
               <i className="fas fa-bars"></i> 
             </div>  
             :
-            <div onClick={() => {setDisplayHeader(false)}}>
+            <div onClick={() => {setDisplayHeader('no-head')}}>
               <i className="fas fa-window-close"></i>            
             </div>            
           }
