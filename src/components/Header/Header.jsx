@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import 'assets/Styles/Header.scss';
-
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
 const Header = (props) => {
+
+    
 
     function CustomLink({ children, to, ...props } ) {
         let resolved = useResolvedPath(to);
@@ -23,47 +24,50 @@ const Header = (props) => {
       
           </div>
         );
-      }
-    
+    }
+
+    const [closeHead, setCloseHead] = useState(false)
+
     return (
-        <header className={props.class}>
+        <header className={props.classHead}>
+            
             <div className="headUp">
                 <div className="imgProfil">
                     <span>GAEL MAYER</span>
                 </div>
                 <ul>
                     <li>
-                        <CustomLink className="link" to="/" onClick={() => {props.close = false}} >
+                        <CustomLink className="link" to="/" onClick={() => {setCloseHead('no-head')}} >
                             <i className="fas fa-house-user"></i>
                             <div>ACCUEIL</div>
                         </CustomLink>
                     </li>
                     <li>
-                        <CustomLink className="link" to="/a-propos" onClick={() => {props.close = false}}>
+                        <CustomLink className="link" to="/a-propos" onClick={() => closeHead}>
                             <i className="fas fa-user"></i>
                             <div>A PROPOS</div>    
                         </CustomLink>
                     </li>
                     <li>
-                        <CustomLink className="link" to="/parcours" onClick={() => {props.close = false}}>
+                        <CustomLink className="link" to="/parcours" onClick={() => closeHead}>
                             <i className="fas fa-university"></i>
                             <div>PARCOURS</div>    
                         </CustomLink>
                     </li>
                     <li>
-                        <CustomLink className="link" to="/portfolio" onClick={() => {props.close = false}}>
+                        <CustomLink className="link" to="/portfolio" onClick={() => closeHead}>
                             <i className="fas fa-briefcase"></i>
                             <div>PORTFOLIO</div>    
                         </CustomLink>
                     </li>
-                    <li>
+                    {/* <li>
 
                         <CustomLink className="link" to="/contact" onClick={() => {props.close = false}}>
                             <i className="fas fa-envelope"></i>
                             <div>CONTACT</div>    
                         </CustomLink>
 
-                    </li>
+                    </li> */}
                 </ul>                
             </div>
             <div className="headDown">

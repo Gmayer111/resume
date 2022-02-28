@@ -129,8 +129,12 @@ const Wrapper = styled.ul`
     @media screen and (max-width: 700px) {
 
 
+
         .lineLeft {
             height: 230px;
+        }
+        .lineHeight {
+            height: ${props => props.height};
         }
 
         .lineHeight {

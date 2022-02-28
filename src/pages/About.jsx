@@ -22,9 +22,8 @@ function About() {
                         ainsi que ma passion pour le développement Web.
                         <br />
                         <br />
-                        J'ai réalisé ce Portfolio à l'aide du framework Javascript REACT pour 
-                        toute la partie front et le framework PHP Symfony pour la partie back 
-                        avec l'API platform.
+                        Ce Portfolio a été réalisé avec la technologie front-end REACT et va continuer
+                        d'évoluer.
                         </p>
                     </div>
                     <div className="rightContainer">

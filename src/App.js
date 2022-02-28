@@ -1,14 +1,14 @@
+import { useEffect, useState } from 'react';
 import './App.scss';
 import Home from 'pages/Home';
 import About from 'pages/About';
 import Resume from 'pages/Resume';
 import Portfolio from 'pages/Portfolio';
-import Contact from 'pages/Contact';
+//import Contact from 'pages/Contact';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { animated, useTransition } from 'react-spring';
 import Header from 'components/Header/Header';
 import styled from 'styled-components/macro';
-import { useEffect, useState } from 'react';
 
 
 const App = () => {
@@ -26,30 +26,28 @@ const App = () => {
     config: { mass: 3, tension: 700, friction: 400 },
   })
 
-  const [displayHeader, setDisplayHeader] = useState(true);
+  const [displayHeader, setDisplayHeader] = useState();
 
 
   useEffect(() => {
-    setDisplayHeader(false)
+    setDisplayHeader('no-head')
   }, [])
-
-
 
   return transitions((props, item) => (
     
     <>
     <Wrapper className='body-container'>
-      <Header class={displayHeader === true ? 'head' : ''} close={displayHeader}/>
+      <Header class={displayHeader === true ? 'head' : null} close={displayHeader}/>
       <animated.div style={props} className='mainContainer'>
         <div className='display-block'>
           <span>GAEL MAYER</span>
           <div>
-            {displayHeader === false ? 
-            <div onClick={() => {setDisplayHeader(true)}}>
+            {displayHeader === 'no-head' ? 
+            <div onClick={() => {setDisplayHeader('head')}}>
               <i className="fas fa-bars"></i> 
-            </div>
+            </div>  
             :
-            <div onClick={() => {setDisplayHeader(false)}}>
+            <div onClick={() => {setDisplayHeader('no-head')}}>
               <i className="fas fa-window-close"></i>            
             </div>            
           }
@@ -60,7 +58,7 @@ const App = () => {
           <Route path="/a-propos" element={<About />}/>
           <Route path="/parcours" element={<Resume />}/>
           <Route path="/portfolio" element={<Portfolio />}/>
-          <Route path="/contact" element={<Contact />}/>
+          {/* <Route path="/contact" element={<Contact />}/> */}
         </Routes>
       </animated.div>         
     </Wrapper>
