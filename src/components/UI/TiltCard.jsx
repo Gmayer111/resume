@@ -10,12 +10,14 @@ function TiltCard(props) {
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
         if (newWindow) newWindow.opener = null
     }
-    const content = props.tiltvalues.map((tiltvalue) => 
+    const content = props.tiltvalues.map((tiltvalue, id) => 
 
         <Tilt options={{ scale: 2}} style={{}}>
             <button 
-                onClick={() => onpenInNewTab(`${tiltvalue.link}`)} target="_blank" rel="noopener noreferrer"
-                key={tiltvalue.id}    
+                onClick={() => onpenInNewTab(`${tiltvalue.link}`)} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                key={id}    
             >  
                 <div className='site' style={{ 
                     backgroundImage: `url(${tiltvalue.picture})` }}>

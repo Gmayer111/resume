@@ -22,7 +22,7 @@ function About() {
                         ainsi que ma passion pour le développement Web.
                         <br />
                         <br />
-                        Ce Portfolio a été réalisé avec la technologie front-end REACT et va continuer
+                        Ce Portfolio a été réalisé avec la bibliothèque Javascript REACT et va continuer
                         d'évoluer.
                         </p>
                     </div>

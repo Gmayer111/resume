@@ -20,16 +20,12 @@ function Portfolio() {
         borderRadius: '30px',
         color: 'black'
     } 
-    
-    // let desactiveBtn = {
-    //     backgroundColor: '',
-    // }   
 
     let tiltvalues = [
-          {id: 1, title: 'Restaurant Van Long', picture: Restaurant, language: 'Wordpress', link: 'https://van-long.fr/', logo: <i class="fab fa-wordpress"></i>},
-          {id: 2, title: 'Time tracking dashboard', picture: Time, language: 'Javascript', link: 'https://confident-hamilton-fd4b0e.netlify.app/', logo: <i class="fab fa-js"></i>},
-          {id: 3, title: 'Mariage', picture: Mariage, language: 'Symfony', link: 'https://ngocmy-et-gael.fr/', logo: <i class="fab fa-symfony"></i>},
-          {id: 1, title: 'Room Home Page', picture: Chair, language: 'Javascript', link: 'https://amazing-gates-9da9b3.netlify.app/', logo: <i class="fab fa-js"></i>},
+          {id: 1, title: 'Restaurant Van Long', picture: Restaurant, language: 'Wordpress', link: 'https://van-long.fr/', logo: <i className="fab fa-wordpress"></i>},
+          {id: 2, title: 'Time tracking dashboard', picture: Time, language: 'Javascript', link: 'https://confident-hamilton-fd4b0e.netlify.app/', logo: <i className="fab fa-js"></i>},
+          {id: 3, title: 'Mariage', picture: Mariage, language: 'Symfony', link: 'https://ngocmy-et-gael.fr/', logo: <i className="fab fa-symfony"></i>},
+          {id: 1, title: 'Room Home Page', picture: Chair, language: 'Javascript', link: 'https://amazing-gates-9da9b3.netlify.app/', logo: <i className="fab fa-js"></i>},
       ]
     
     let tiltArrays = [];
@@ -52,8 +48,7 @@ function Portfolio() {
 
     useEffect(() => {
         setShowResult(tiltvalues);
-
-    }, [tiltvalues])
+    }, [])
 
     useEffect(() => {
         setChangeColorAll(true)

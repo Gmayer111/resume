@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import 'assets/Styles/Header.scss';
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
@@ -26,36 +26,56 @@ const Header = (props) => {
         );
     }
 
-    const [closeHead, setCloseHead] = useState(false)
+    const [displayHeader, setDisplayHeader] = useState();
+
+
+    useEffect(() => {
+      setDisplayHeader('no-head')
+    }, [])
 
     return (
-        <header className={props.classHead}>
-            
+        <>
+        <header>
+        <div className='block-bars'>
+          <span>GAEL MAYER</span>
+          <div>
+            {displayHeader === 'no-head' ? 
+            <div onClick={() => {setDisplayHeader('head')}}>
+              <i className="fas fa-bars"></i> 
+            </div>  
+            :
+            <div onClick={() => {setDisplayHeader('no-head')}}>
+              <i className="fas fa-window-close"></i>            
+            </div>            
+          }
+          </div>
+        </div>
+        <div className={displayHeader}>
             <div className="headUp">
                 <div className="imgProfil">
                     <span>GAEL MAYER</span>
                 </div>
                 <ul>
                     <li>
-                        <CustomLink className="link" to="/" onClick={() => {setCloseHead('no-head')}} >
+                        <CustomLink className="link" to="/" onClick={() => {setDisplayHeader('no-head')}} >
                             <i className="fas fa-house-user"></i>
                             <div>ACCUEIL</div>
                         </CustomLink>
                     </li>
                     <li>
-                        <CustomLink className="link" to="/a-propos" onClick={() => closeHead}>
+                        <CustomLink className="link" to="/a-propos" onClick={() => {setDisplayHeader('no-head')}} >
                             <i className="fas fa-user"></i>
                             <div>A PROPOS</div>    
                         </CustomLink>
                     </li>
                     <li>
-                        <CustomLink className="link" to="/parcours" onClick={() => closeHead}>
+                        <CustomLink className="link" to="/parcours" onClick={() => {setDisplayHeader('no-head')}} >
                             <i className="fas fa-university"></i>
                             <div>PARCOURS</div>    
                         </CustomLink>
                     </li>
                     <li>
-                        <CustomLink className="link" to="/portfolio" onClick={() => closeHead}>
+                        <CustomLink className="link" to="/portfolio" onClick={() => {setDisplayHeader('no-head')}} >
                             <i className="fas fa-briefcase"></i>
                             <div>PORTFOLIO</div>    
                         </CustomLink>
@@ -82,9 +102,11 @@ const Header = (props) => {
                 </div>
                 <span>Site inspired by watson-vcard.netlify.app/index-dark-particles1.html</span>
               
-            </div>
+            </div>            
+        </div>
+        </header>        
+        </>
 
-        </header>
     )
 }
 

@@ -30,13 +30,14 @@
             color: #00a3e1;
         }
             p {
+                display: inline-block;
                 font-family: 'Roboto', sans-serif;
                 text-align: center;
                 font-size: 28px;
                 font-weight: 300;
                 font-style: normal;
                 color: whitesmoke;               
-                width: 100%;
+                //width: 100%;
             
                 .textAnim {
                     display: inline-block;
@@ -44,35 +45,37 @@
                     font-weight: bold;
                     height: auto;
                     position: relative;
-                    top: 4px;
+                    top: 2px;
                     font-weight: 700;
-                    animation: moveBorder 1s linear 2s infinite forwards alternate;
-                    overflow: hidden;
+
                 }
                 
                 .textFront{
                     border-right: 3px solid grey;
-                    display: none;
                     font-weight: 700;
                     text-decoration: underline;
+                    display: none;
+                    overflow: hidden;
                 }
 
                 .textBack {
                     border-right: 3px solid grey;
                     font-weight: 700;
                     text-decoration: underline;
+                    display: none;
+                    overflow: hidden;
                 }
 
 
                 @keyframes moveBorder {
                     from {
-                        max-width: 0;
-                        text-decoration: underline;
+                        width: 0;
+                        text-decoration: #00a3e1 underline;
                     }
 
                     to {
-                        max-width: 100%;
-                        text-decoration: underline;
+                        width: 125px;
+                        text-decoration: #00a3e1 underline;
                     }
             
                 }

@@ -26,13 +26,15 @@ export default function Home() {
             if (text === 'textFront') {
                 domNodeBack.style.display = 'none'
                 domNodeFront.style.display = 'inline-block'
+                domNodeFront.style.animation = 'moveBorder 1.5s ease-in infinite alternate'
             } else {
                 domNodeFront.style.display = 'none'
                 domNodeBack.style.display = 'inline-block'
+                domNodeBack.style.animation = 'moveBorder 1.5s ease-in infinite alternate'
             }
         }
 
-        setInterval(flashChangeText, 4000)
+        setInterval(flashChangeText, 3000)
 
     }, [])
 
@@ -47,8 +49,8 @@ export default function Home() {
                 <p>
                     <span className='title'>Développeur Web </span>
                     <span className='textAnim'>
-                        <span className='textAnim textFront' ref={front}>Front-end</span>
-                        <span className='textAnim textBack' ref={back}>Back-end</span>                        
+                        <b className='textAnim textFront' ref={front}>Front-end</b>
+                        <b className='textAnim textBack' ref={back}>Back-end</b>                        
                     </span>
 
                 </p>

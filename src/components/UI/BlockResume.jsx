@@ -3,9 +3,6 @@ import styled from 'styled-components/macro'
 
 function BlockResume(props) {
 
-    console.log(props.height);
-
-
     return (
         <Wrapper height={props.height} heightDate={props.heightDate}>
                 <li>
