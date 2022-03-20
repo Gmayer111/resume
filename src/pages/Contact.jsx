@@ -21,7 +21,8 @@ class Contact extends React.Component {
 
     handleSubmit = (event) => {
         
-        fetch("https://gael-mayer.fr/api/contacts", {
+        fetch("http://symfony.localhost/api", {
+            "mode": "cors",
             "method": "POST",
             "headers": {
                 "content-type": "application/json",
@@ -64,7 +65,6 @@ class Contact extends React.Component {
 
     render() {
         const visibility = this.state.visibility;
-        console.log(visibility);
         return (
             <FlipPage  title={"Contact"} logo={<i className="fas fa-envelope"></i>}>
                 <div className="main-block-contact">

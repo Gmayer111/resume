@@ -4,6 +4,7 @@ import Home from 'pages/Home';
 import About from 'pages/About';
 import Resume from 'pages/Resume';
 import Portfolio from 'pages/Portfolio';
+import Contact from 'pages/Contact';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { animated, useTransition } from 'react-spring';
 import Header from 'components/Header/Header';
@@ -34,6 +35,7 @@ const App = () => {
             <Route path="a-propos" element={<About />}/>
             <Route path="parcours" element={<Resume />}/>
             <Route path="portfolio" element={<Portfolio />}/>
+            <Route path="contact" element={<Contact />}/>
           </Routes>
       </animated.div>         
     </Wrapper>
