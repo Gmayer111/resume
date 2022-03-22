@@ -20,8 +20,11 @@ class Contact extends React.Component {
 
 
     handleSubmit = (event) => {
+
+        const url = process.env.API_URL
+        console.log(url);
         
-        fetch("http://symfony.localhost/api", {
+        fetch(url, {
             "mode": "cors",
             "method": "POST",
             "headers": {
