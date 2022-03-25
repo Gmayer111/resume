@@ -5,6 +5,7 @@ import React from 'react'
 
 
 class Contact extends React.Component {
+
     constructor(props) {
         super(props);
 
@@ -21,10 +22,10 @@ class Contact extends React.Component {
 
     handleSubmit = (event) => {
 
-        const url = process.env.API_URL
-        console.log(url);
         
-        fetch(url, {
+      const BASE_URL = process.env.REACT_APP_BASE_URL;
+        
+        fetch(BASE_URL, {
             "mode": "cors",
             "method": "POST",
             "headers": {
