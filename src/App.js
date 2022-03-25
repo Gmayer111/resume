@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.scss';
 import Home from 'pages/Home';
 import About from 'pages/About';
@@ -14,7 +14,7 @@ import styled from 'styled-components/macro';
 const App = () => {
 
   const location = useLocation();
-  const transitions = useTransition(location, {
+  let transitions = useTransition(location, {
     from: { 
       opacity: 0, transform: 'perspective(6000px) rotateY(180deg) scale(0.2, 0.3)',
     },
@@ -23,6 +23,10 @@ const App = () => {
     },
     config: { mass: 3, tension: 700, friction: 400 },
   })
+
+  useEffect(() => {
+    transitions = '';
+  }, [])
 
   return transitions((props, item) => (
     

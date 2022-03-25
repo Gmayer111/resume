@@ -20,7 +20,7 @@ function Resume() {
                                 startDate={'2018'}
                                 titleUp={'Forfaitiste'}
                                 titleDown={'Tour opérateur Asia'}
-                                content={'Je réalise des circuits sur-mesure et à la carte sur le continent asiatique et océanique. je dois prendre en considération les attentes des clients.'}
+                                content={'Réalisation de circuits sur-mesure et à la carte sur le continent asiatique et océanique.'}
                                 height='230px'
                                 heightDate='255px'
                             />
@@ -42,7 +42,7 @@ function Resume() {
                                 startDate={'2011'}
                                 titleUp={'Chef de rang / VVT Australie'}
                                 titleDown={'Elysée Lenôtre & Restaurant Australie'}
-                                content={'Durant ces années j\'ai pû mettre à profit mon expérience acquise au cours de mon alternance dans la restauration dans des grandes brasseries parisiennes ainsi qu\'à l\'étranger.'}
+                                content={'Durant ces années j\'ai pû mettre à profit mon expérience acquise dans des grandes brasseries parisiennes ainsi qu\'à l\'étranger.'}
                                 height='310px'
                                 heightDate='335px'
                             />                                
@@ -56,9 +56,9 @@ function Resume() {
                             <BlockResume 
                                 endDate={'2022'}
                                 startDate={'2021'}
-                                titleUp={'Développeur Web Full Stack'}
+                                titleUp={`Graduate Développeur web full stack (BAC +2)`}
                                 titleDown={'Digital Campus (Studi)'}
-                                content={'Titre de niveau 5 reconnu par l\'état pour devenir développeur Web front-end / back-end.'}
+                                content={'Titre RNCP de niveau 5 reconnu par l\'état.'}
                                 height='200px'
                                 heightDate='225px'
                             />
@@ -67,9 +67,9 @@ function Resume() {
                             <BlockResume 
                                 endDate={'2018'}
                                 startDate={'2017'}
-                                titleUp={'Licence professionnelle dans la production touristique'}
+                                titleUp={'Licence professionnelle Chef de projet touristique'}
                                 titleDown={'Paris School of Tourism & Communication'}
-                                content={'Diplômes reconnu par l\'état pour devenir chef de produits touristiques. Négociation des contrats avec les réceptifs étrangers et réalisation de circuits incluant les diverses commissions.'}
+                                content={'Diplômes reconnu par l\'état.'}
                                 height='360px'
                                 heightDate='385px'
                             />
@@ -90,11 +90,11 @@ function Resume() {
                             size={'60'}
                         />
                         <BlockMeasure 
-                            language={'JAVASCRIPT'} 
+                            language={'Javascript - ECMAScript 6'} 
                             size={'60'}
                         />
                         <BlockMeasure 
-                            language={'REACT'} 
+                            language={'ReactJS'} 
                             size={'50'}
                         />
                     </div>
@@ -107,11 +107,11 @@ function Resume() {
                             size={'60'}
                         />
                         <BlockMeasure 
-                            language={'MYSQL'} 
+                            language={'MySQL'} 
                             size={'80'}
                         />
                         <BlockMeasure 
-                            language={'SYMFONY'} 
+                            language={'Symfony'} 
                             size={'50'}
                         />
                     </div>
