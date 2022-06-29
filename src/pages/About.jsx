@@ -22,7 +22,7 @@ function About() {
                         ainsi que ma passion pour le développement Web.
                         <br />
                         <br />
-                        Ce Portfolio a été réalisé avec la bibliothèque front ReactJS et API platform 
+                        Portfolio réalisé avec la bibliothèque ReactJS et API platform 
                         de Symfony pour la partie back.
                         </p>
                     </div>

@@ -12,7 +12,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: #777777;
+    color: #9c9a9a;
 
     .block-bars {
         display: none;
@@ -21,7 +21,7 @@ header {
 
     .headUp {
 
-        font-weight: 400;
+        font-weight: 500;
     
         
         .imgProfil {
@@ -110,7 +110,7 @@ header {
             justify-content: space-around;
         }
 
-        span {
+        .inspi {
             text-align: center;
             font-family: 'Roboto', sans-serif;
             font-weight: 600;
