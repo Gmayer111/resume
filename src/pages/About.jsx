@@ -20,10 +20,6 @@ function About() {
                         6 ans, j’ai décidé de me tourner vers ma passion initiale qui est l’informatique.
                         Je saurais mettre à profit mon savoir-faire dans l’écoute des attentes du client 
                         ainsi que ma passion pour le développement Web.
-                        <br />
-                        <br />
-                        Portfolio réalisé avec la bibliothèque ReactJS et API platform 
-                        de Symfony pour la partie back.
                         </p>
                     </div>
                     <div className="rightContainer">
