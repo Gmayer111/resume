@@ -31,18 +31,14 @@ function BlockResume(props) {
 
 const Wrapper = styled.ul`
 
-
     height: 100%;
     margin-bottom: 4rem;
-
     li {
         display: flex;
         justify-content: space-between;
         height: 40%;
         width: 100%;
     }
-
-
     .blockDate {
         display: flex;
         position: relative;
@@ -50,15 +46,12 @@ const Wrapper = styled.ul`
         justify-content: space-between;
         height: 195px;
         color: #ffffff;
-        font-family: 'Roboto', sans-serif;
         font-size: 16px;
         font-weight: 400;
     }
-
     .block-date-mobile {
         display: none;
     }
-
     .lineLeft {
         position: relative;
         top: 12px;
@@ -67,7 +60,6 @@ const Wrapper = styled.ul`
         height: 170px;
         background-color: #019dd9;
     }
-
     .lineLeft::before {
         position: absolute;
         content: "";
@@ -78,7 +70,6 @@ const Wrapper = styled.ul`
         border: 2px solid #019dd9;
         border-radius: 50%;
     }
-
     .lineLeft::after {
         position: absolute;
         content: "";
@@ -89,8 +80,6 @@ const Wrapper = styled.ul`
         border: 2px solid #019dd9;
         border-radius: 50%;
     }
-
-
     .blockText {
         display: flex;
         width: 100%;
@@ -99,14 +88,12 @@ const Wrapper = styled.ul`
         height: 70%;
         margin: 3rem;
     }
-
     h3 {
         color: #ffffff;
         font-size: 18px;
         font-weight: 800;
         text-transform: uppercase;
     }
-
     h4 {
         color: #019dd9;
         text-transform: uppercase;
@@ -115,33 +102,22 @@ const Wrapper = styled.ul`
         height: 100%;
         margin-top: 0.5rem;
     }
-
     p {
         color: #ffffff;
         line-height: 1.6rem;
         width: 100%;
         margin-top: 0.5rem;
     }
-
     @media screen and (max-width: 700px) {
-
-
-
         .lineLeft {
             height: 230px;
         }
         .lineHeight {
             height: ${props => props.height};
         }
-
-        .lineHeight {
-            height: ${props => props.height};
-        }
-
         .blockDate {
             display: none;
         }
-
         .block-date-mobile {
             display: flex;
             position: relative;
@@ -154,7 +130,6 @@ const Wrapper = styled.ul`
             font-size: 16px;
             font-weight: 400;
         }
-
         .blockText {
             display: flex;
             width: 100%;
@@ -163,13 +138,6 @@ const Wrapper = styled.ul`
             height: 60%;
             margin: 2rem;
         }
-    
-
     }
-
-
-
-  
 `
-
 export default BlockResume

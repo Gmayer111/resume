@@ -28,7 +28,7 @@ function About() {
                         <ul>
                             <div className="blockInfo">
                                 <Li title={"Nom"} info={"Gaël Mayer"} />
-                                <Li title={"Age"} info={"33 ans"} />
+                                <Li title={"Age"} info={"34 ans"} />
                                 <Li title={"Adresse"} info={"4 rue Dunois, 75013 Paris"} />
                                 <Li title={"Mail"} info={"gaelmayer@yahoo.fr"} />
                                 <a href={CV}><Button title={'Télécharger CV'}/></a>

@@ -14,7 +14,18 @@ function Resume() {
                         <div>
                             <ResumeTitle title={'EXPERIENCE'} />
                         </div>
-                        <div className='resume'>
+                        <div>
+                            <BlockResume 
+                                endDate={'2022'}
+                                startDate={'2022'}
+                                titleUp={'Développeur Web PHP junior'}
+                                titleDown={'Agence Web NWB'}
+                                content={'Remplacement temporaire pour assister sur la nouvelle version d\'un projet PHP.'}
+                                height='230px'
+                                heightDate='255px'
+                            />
+                        </div>
+                        <div>
                             <BlockResume 
                                 endDate={'2022'}
                                 startDate={'2018'}
@@ -91,7 +102,7 @@ function Resume() {
                         />
                         <BlockMeasure 
                             language={'Javascript - ECMAScript 6'} 
-                            size={'60'}
+                            size={'50'}
                         />
                         <BlockMeasure 
                             language={'ReactJS'} 
@@ -104,11 +115,11 @@ function Resume() {
                         </div>
                         <BlockMeasure 
                             language={'PHP'} 
-                            size={'60'}
+                            size={'50'}
                         />
                         <BlockMeasure 
                             language={'MySQL'} 
-                            size={'80'}
+                            size={'60'}
                         />
                         <BlockMeasure 
                             language={'Symfony'} 

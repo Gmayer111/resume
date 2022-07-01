@@ -44,48 +44,64 @@
 }
 
 .imgContainer .blockTitle p {
+  display: inline-block;
   font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 28px;
   font-weight: 300;
   font-style: normal;
   color: whitesmoke;
-  width: 100%;
 }
 
-.imgContainer .blockTitle p .text {
+.imgContainer .blockTitle p .textAnim {
   display: inline-block;
   white-space: nowrap;
-  overflow: hidden;
   font-weight: bold;
   height: auto;
   position: relative;
-  top: 4px;
-  border-right: 3px solid grey;
-  -webkit-animation: moveBorder 2s linear infinite alternate;
-          animation: moveBorder 2s linear infinite alternate;
+  top: 2px;
+  font-weight: 700;
 }
 
-.imgContainer .blockTitle p .text b {
-  text-decoration: underline;
+.imgContainer .blockTitle p .textFront {
+  border-right: 3px solid grey;
   font-weight: 700;
+  text-decoration: underline;
+  display: none;
+  overflow: hidden;
+}
+
+.imgContainer .blockTitle p .textBack {
+  border-right: 3px solid grey;
+  font-weight: 700;
+  text-decoration: underline;
+  display: none;
+  overflow: hidden;
 }
 
 @-webkit-keyframes moveBorder {
   from {
-    max-width: 0rem;
+    width: 0;
+    -webkit-text-decoration: #00a3e1 underline;
+            text-decoration: #00a3e1 underline;
   }
   to {
-    max-width: 75%;
+    width: 125px;
+    -webkit-text-decoration: #00a3e1 underline;
+            text-decoration: #00a3e1 underline;
   }
 }
 
 @keyframes moveBorder {
   from {
-    max-width: 0rem;
+    width: 0;
+    -webkit-text-decoration: #00a3e1 underline;
+            text-decoration: #00a3e1 underline;
   }
   to {
-    max-width: 75%;
+    width: 125px;
+    -webkit-text-decoration: #00a3e1 underline;
+            text-decoration: #00a3e1 underline;
   }
 }
 
@@ -119,6 +135,27 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 400px;
+  }
+  .imgContainer p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imgContainer p .title {
+    font-size: 28px;
+  }
+  .imgContainer p span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 22px;
   }
 }
 /*# sourceMappingURL=Home.css.map */

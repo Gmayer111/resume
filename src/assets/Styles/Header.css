@@ -19,17 +19,21 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #777777;
+  color: #9c9a9a;
+}
+
+header .block-bars {
+  display: none;
 }
 
 header .headUp {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 header .headUp .imgProfil {
-  background-color: indigo;
-  background-image: url("../Images/profil.png");
+  background-image: url("../Images/pro.jpg");
   background-size: cover;
+  background-position: 100%;
   width: auto;
   height: 200px;
   font-family: 'Playfair Display', serif;
@@ -50,12 +54,11 @@ header .headUp .imgProfil span {
   font-weight: 700;
   font-size: 1.3em;
   color: white;
-  background-color: rgba(82, 189, 231, 0.8);
+  background-color: rgba(82, 189, 231, 0.6);
   width: 100%;
 }
 
 header .headUp ul {
-  background-color: #17181b;
   height: 50vh;
 }
 
@@ -84,7 +87,7 @@ header .headUp ul li .link {
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
   left: 1.5rem;
   width: 100%;
   margin: 0.3rem;
@@ -94,6 +97,10 @@ header .headUp ul li .link {
 header .headUp ul li .link div {
   position: relative;
   left: 0.7rem;
+}
+
+header .headUp ul li .link:hover {
+  color: #52bde7;
 }
 
 header .headDown {
@@ -115,6 +122,10 @@ header .headDown .icon {
   color: #777777;
 }
 
+header .headDown .icon:hover, header .headDown .inspi:hover {
+  color: #52bde7;
+}
+
 header .headDown div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,7 +134,8 @@ header .headDown div {
       justify-content: space-around;
 }
 
-header .headDown span {
+header .headDown .inspi {
+  color: #777777;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
@@ -134,14 +146,62 @@ header .headDown span {
 @media screen and (max-width: 700px) {
   header {
     visibility: hidden;
+    position: relative;
   }
-  .head {
+  header .block-bars {
+    visibility: visible;
+    width: 100vw;
+    height: 50px;
+    background-color: #17181b;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 10;
+  }
+  header .block-bars span {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    width: 80vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-right: 1px solid #3b3c43;
+  }
+  header .block-bars div {
+    width: 20vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  header .head {
     background-color: #17181b;
     width: 55vw;
+    height: 100vh;
     z-index: 10;
     overflow: auto;
+    position: absolute;
     -webkit-animation: display 0.5s ease-in-out 2ms 1 forwards;
             animation: display 0.5s ease-in-out 2ms 1 forwards;
+  }
+  header .no-head {
+    visibility: hidden;
   }
   @-webkit-keyframes display {
     from {
