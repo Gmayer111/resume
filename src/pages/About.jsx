@@ -16,10 +16,9 @@ function About() {
                     <div className="leftContainer">
                         <h2>Développeur Web Front-end & Back-end</h2>
                         <p>
-                        Fort d’une expérience dans le milieu de la production touristique depuis 
-                        6 ans, j’ai décidé de me tourner vers ma passion initiale qui est l’informatique.
-                        Je saurais mettre à profit mon savoir-faire dans l’écoute des attentes du client 
-                        ainsi que ma passion pour le développement Web.
+                        Issu d’une formation supérieure en tourisme et fort d’une expérience de 4 ans dans le milieu de la production touristique, j’ai décidé de me tourner vers le secteur de l’informatique.
+                        <br />
+                        Je saurai mettre à profit mon expérience du monde de l’entreprise ainsi que ma passion pour le développement web.
                         </p>
                     </div>
                     <div className="rightContainer">

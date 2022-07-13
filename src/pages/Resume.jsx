@@ -18,9 +18,10 @@ function Resume() {
                             <BlockResume 
                                 endDate={'2022'}
                                 startDate={'2022'}
-                                titleUp={'Développeur Web PHP junior'}
+                                titleUp={'Développeur PHP junior'}
                                 titleDown={'Agence Web NWB'}
-                                content={'Remplacement temporaire pour assister sur la nouvelle version d\'un projet PHP.'}
+                                content=
+                                {'Migration d’une ancienne version PHP du projet web pour un tour opérateur et développement de nouvelles fonctionnalités.'}
                                 height='230px'
                                 heightDate='255px'
                             />
