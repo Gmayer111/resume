@@ -30,7 +30,7 @@ function About() {
                                 <Li title={"Age"} info={"34 ans"} />
                                 <Li title={"Adresse"} info={"4 rue Dunois, 75013 Paris"} />
                                 <Li title={"Mail"} info={"gaelmayer@yahoo.fr"} />
-                                <a href={CV}><Button title={'Télécharger CV'}/></a>
+                                <a href={CV} target="_blank" rel="noopener noreferrer"><Button title={'Télécharger CV'}/></a>
                             </div>                            
                         </ul>
                     </div>
