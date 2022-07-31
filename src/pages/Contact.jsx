@@ -3,6 +3,8 @@ import ResumeTitle from 'components/UI/ResumeTitle'
 import 'assets/Styles/Contact.scss';
 import React from 'react'
 
+// require('dotenv').config()
+
 
 class Contact extends React.Component {
 
@@ -19,11 +21,12 @@ class Contact extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-
+    
     handleSubmit = (event) => {
-
         
-      const BASE_URL = process.env.REACT_APP_BASE_URL;
+        const BASE_URL = process.env.REACT_APP_BASE_URL;
+        console.log(BASE_URL);
+        
         
         fetch(BASE_URL, {
             "mode": "cors",
@@ -48,8 +51,8 @@ class Contact extends React.Component {
                 this.setState({visibility: 'hidden'})
             }, 3000)
         })
-        .catch(err => {
-            console.log(err);
+        .catch(error => {
+            console.log('Error fetching and parsing data', error);
         })
         
         event.preventDefault();
@@ -87,7 +90,6 @@ class Contact extends React.Component {
                                         ref={this.fullNameRef} 
                                         placeholder=" " 
                                         required 
-                                        pattern="^\s*[a-zA-Z,\s]+\s*$"
                                         value={this.state.valueName}
                                         onChange={this.handleChange}
                                     />          
