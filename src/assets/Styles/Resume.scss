@@ -1,116 +1,105 @@
 .main-block-resume {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 3rem;
 
+  .blockUp {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 100%;
-    margin-bottom: 3rem;
-    
+    margin-top: 3rem;
 
-    .blockUp {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        margin-top: 3rem;
-        
-        .blockLeft, .blockRight {
-            display: flex;
-            width: 50%;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        ul {
-            position: relative;
-            top: 4rem;
-        }
+    .blockLeft,
+    .blockRight {
+      display: flex;
+      width: 50%;
+      flex-direction: column;
+      align-items: center;
     }
-    
-    .blockDown {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+
+    ul {
+      position: relative;
+      top: 4rem;
+    }
+  }
+
+  .blockDown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 30%;
+    margin-top: 2rem;
+
+    .blockDownLeft,
+    .blockDownRight {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .block-title {
+        margin-bottom: 2rem;
+      }
+
+      .blockMeasure {
         width: 100%;
-        height: 30%;
+        display: flex;
+        flex-direction: column;
         margin-top: 2rem;
 
-        .blockDownLeft, .blockDownRight {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            .block-title {
-                margin-bottom: 2rem;
-            }
-
-            .blockMeasure {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                margin-top: 2rem;
-
-                span {
-                    font-size: 16px;
-                    font-weight: 500;
-                    color: #ffffff;
-                    position: relative;
-                    bottom: 1rem;
-                }
-
-                .measure {
-                    width: 85%;
-                    height: 12px;
-                    background-color: #404144;
-                }
-            }
+        span {
+          font-size: 16px;
+          font-weight: 500;
+          color: #ffffff;
+          position: relative;
+          bottom: 1rem;
         }
+
+        .measure {
+          width: 85%;
+          height: 12px;
+          background-color: #404144;
+        }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 700px) {
+  .main-block-resume {
+    height: 500vh;
 
-    .main-block-resume {
-        height: 500vh;
-        
-        .blockUp {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
+    .blockUp {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
 
-            .blockLeft {
-                width: 100%;
-            }
+      .blockLeft {
+        width: 100%;
+      }
 
-            ul {
-                position: relative;
-                top: 4rem;
-            }
+      ul {
+        position: relative;
+        top: 4rem;
+      }
 
-            .blockRight {
-                position: relative;
-                margin-top: 2rem;
-                width: 100%;
-            }
-
-        }
-
-        .blockDown {
-            display: flex;
-            flex-direction: column;
-            align-content: flex-start;
-        
-            .blockDownLeft, .blockDownRight {
-                width: 100%;
-            }
-
-        }
+      .blockRight {
+        position: relative;
+        margin-top: 2rem;
+        width: 100%;
+      }
     }
+
+    .blockDown {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+
+      .blockDownLeft,
+      .blockDownRight {
+        width: 100%;
+      }
+    }
+  }
 }
-
-
-
-
-
-
-
-
-
