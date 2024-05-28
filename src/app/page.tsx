@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from "react";
-import "assets/Styles/Home.scss";
+"use client";
 
-export default function Home() {
+import React, { useEffect, useRef } from "react";
+
+const page = () => {
   const front = useRef();
 
   useEffect(() => {
@@ -46,4 +47,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default page;
