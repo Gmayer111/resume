@@ -7,14 +7,14 @@ import { playfair_Display } from "utils/font";
 
 export default function Home() {
   const [currentText, setCurrentText] = useState<string>("");
-  const textsAnimate: TextsAnimated[] = [
+  const textsAnimated: TextsAnimated[] = [
     "Développeur Web",
     "Développeur Frontend",
     "Concepteur Développeur",
   ];
 
   useEffect(() => {
-    let words = textsAnimate;
+    let words = textsAnimated;
     let i = 0;
 
     function changeText() {
@@ -40,9 +40,9 @@ export default function Home() {
         <p>
           <span>Je suis </span>
           <span>
-            {currentText === "" && <b>{textsAnimate[0]}</b>}
-            {textsAnimate
-              .filter((textAnimate) => textAnimate === currentText)
+            {currentText === "" && <b>{textsAnimated[0]}</b>}
+            {textsAnimated
+              .filter((textAnimated) => textAnimated === currentText)
               .map((item) => (
                 <b>{item}</b>
               ))}

@@ -6,7 +6,7 @@ import { useWindowSize } from "hooks/use-window-size";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import { useEffect, useRef, useState } from "react";
 import { useClickOutside } from "hooks/use-click-outside";
-import ProfilImg from "../../../public/Images/pro.jpg";
+import ProfilImg from "../../../public/Images/profil.jpg";
 import Image from "next/image";
 
 const Header = () => {
