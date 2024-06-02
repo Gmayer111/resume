@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { roboto } from "utils/font";
 import { usePathname } from "next/navigation";
 import { bottomNavItems, navItems } from "data/dataSideBar/data";
 import { useWindowSize } from "hooks/use-window-size";
@@ -28,7 +27,7 @@ const Header = () => {
   }, [windowSize]);
 
   return (
-    <header className={roboto.className}>
+    <header>
       {isResponsive && (
         <div className="responsiveTopBar">
           <h2>GAEL MAYER</h2>
