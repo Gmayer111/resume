@@ -22,18 +22,13 @@
     align-items: center;
   }
 
-  h1 {
-    text-align: center;
-    font-size: 62px;
-  }
-
   h1 span:nth-child(1) {
     color: white;
     font-weight: 500;
   }
 
   h1 span:nth-child(2) {
-    color: #00a3e1;
+    color: #0f3bec;
     font-weight: 900;
   }
 
@@ -42,7 +37,7 @@
     font-size: 28px;
     font-weight: 300;
     font-style: normal;
-    color: whitesmoke;
+    color: #fff;
     white-space: nowrap;
     overflow: hidden;
     display: flex;
@@ -78,7 +73,7 @@
 
   p span:nth-child(2) b {
     line-height: 20px;
-    border-bottom: 2px solid #00a3e1;
+    border-bottom: 2px solid #0f3bec;
     padding-left: 5px;
   }
 

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import HomePagePicture from "../../public/Images/jura.jpg";
+import HomePagePicture from "../../public/Images/homePage.jpeg";
 import { useEffect, useState } from "react";
 import { TextsAnimated } from "types/home";
 import { playfair_Display } from "utils/font";
