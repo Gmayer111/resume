@@ -1,12 +1,20 @@
 "use client";
+import Image from "next/image";
+import HomePagePicture from "../../public/Images/homePage.jpeg";
+import { useEffect, useState } from "react";
+import { TextsAnimated } from "types/home";
+import { playfair_Display } from "utils/font";
 
-import React, { useEffect, useRef } from "react";
-
-const page = () => {
-  const front = useRef();
+export default function Home() {
+  const [currentText, setCurrentText] = useState<string>("");
+  const textsAnimated: TextsAnimated[] = [
+    "Développeur Web",
+    "Développeur Frontend",
+    "Concepteur Développeur",
+  ];
 
   useEffect(() => {
-    let words = ["textFront"];
+    let words = textsAnimated;
     let i = 0;
 
     function changeText() {
@@ -14,39 +22,33 @@ const page = () => {
       return words[i];
     }
 
-    const domNodeFront = front.current;
-
-    function flashChangeText() {
+    setInterval(() => {
       let text = changeText();
-
-      if (text === "textFront") {
-        domNodeFront.style.display = "inline-block";
-        domNodeFront.style.animation =
-          "moveBorder 1.5s ease-in infinite alternate";
-      }
-    }
-
-    setInterval(flashChangeText, 3000);
+      setCurrentText(text);
+    }, 3000);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className="imgContainer">
-      <div className="blockTitle">
+    <section className="homePageContainer">
+      <Image src={HomePagePicture} alt="Image de la page d'accueil" />
+      <div>
         <h1>
-          <span className="firstName">GAEL</span>
-          <span className="lastName"> MAYER</span>
+          <span className={playfair_Display.className}>GAEL</span>
+          <span> MAYER</span>
         </h1>
         <p>
-          <span className="title">Développeur </span>
-          <span className="textAnim">
-            <b className="textAnim textFront" ref={front}>
-              Front-end
-            </b>
+          <span>Je suis </span>
+          <span>
+            {currentText === "" && <b>{textsAnimated[0]}</b>}
+            {textsAnimated
+              .filter((textAnimated) => textAnimated === currentText)
+              .map((item) => (
+                <b>{item}</b>
+              ))}
           </span>
         </p>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default page;
+}

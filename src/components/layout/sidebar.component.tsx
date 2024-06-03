@@ -1,13 +1,12 @@
 "use client";
 import Link from "next/link";
-import { roboto } from "utils/font";
 import { usePathname } from "next/navigation";
 import { bottomNavItems, navItems } from "data/dataSideBar/data";
 import { useWindowSize } from "hooks/use-window-size";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import { useEffect, useRef, useState } from "react";
 import { useClickOutside } from "hooks/use-click-outside";
-import ProfilImg from "../../../public/Images/pro.jpg";
+import ProfilImg from "../../../public/Images/profil.jpg";
 import Image from "next/image";
 
 const Header = () => {
@@ -28,7 +27,7 @@ const Header = () => {
   }, [windowSize]);
 
   return (
-    <header className={roboto.className}>
+    <header>
       {isResponsive && (
         <div className="responsiveTopBar">
           <h2>GAEL MAYER</h2>

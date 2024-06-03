@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../../assets/sass/core.scss";
 import Header from "components/layout/sidebar.component";
+import { playfair_Display, roboto } from "utils/font";
 
 export const metadata: Metadata = {
   title: "React App",
@@ -13,7 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${roboto.variable} ${playfair_Display.variable}`}
+    >
       <body>
         <Header />
         {children}
