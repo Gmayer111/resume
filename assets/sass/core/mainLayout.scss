@@ -7,7 +7,7 @@
   > div {
     display: flex;
     flex-direction: column;
-    max-width: 85%;
+    width: 1040px;
   }
 
   > div > div:nth-child(1) {
@@ -29,5 +29,13 @@
 
   span.icon {
     font-size: 38px;
+  }
+
+  @media screen and (max-width: 768px) {
+    > div {
+      display: flex;
+      flex-direction: column;
+      max-width: 85%;
+    }
   }
 }
