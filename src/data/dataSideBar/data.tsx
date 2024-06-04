@@ -18,7 +18,7 @@ export const navItems: TNavItems[] = [
     content: "ACCUEIL",
   },
   {
-    path: "/a-propos",
+    path: "/about",
     icon: <UserIcon height={21} width={20} />,
     content: "A PROPOS",
   },
