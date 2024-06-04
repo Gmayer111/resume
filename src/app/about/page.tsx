@@ -3,8 +3,9 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MainLayout from "components/layout/main-layout.component";
 import Link from "next/link";
+import { TPersonalInformationsData } from "types/about";
 
-export const personalInformationsData = [
+export const personalInformationsData: TPersonalInformationsData[] = [
   {
     title: "Nom",
     content: "Gaël Mayer",

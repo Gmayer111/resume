@@ -1,7 +1,7 @@
 import React from "react";
 
 export type TMainLayoutProps = {
-  children: any;
+  children: React.ReactNode;
   headingTitle?: string;
   headingIcon?: JSX.Element;
 };
