@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ListItem from "components/common/list-item.component";
 import SkillItem from "components/common/skill-item.component";
 import MainLayout from "components/layout/main-layout.component";
-import { experiencesData } from "data/dataResume/data";
-import { skillsData } from "data/dataTechnos/skillsData";
+import { experiencesData } from "data/home-page/experiences-data";
+import { skillsData } from "data/home-page/skills-data";
 
 const Resume = () => {
   return (
