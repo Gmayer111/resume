@@ -1,0 +1,74 @@
+.skilItemContainer {
+  color: #fff;
+
+  h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+  }
+
+  .progressBar {
+    height: 10px;
+    background-color: #404144;
+    margin-bottom: 20px;
+    overflow: visible;
+    position: relative;
+    width: 90%;
+  }
+
+  .progressPosition {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    animation: progressBar 1s;
+    background-color: #00a3e1;
+    animation-fill-mode: both;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  span {
+    background-color: lightblue;
+  }
+
+  @keyframes progressBar {
+    0% {
+      width: 0;
+    }
+  }
+
+  .progressValue::before {
+    content: attr(content);
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+  }
+
+  .triangleShape::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 25px solid #00a3e1;
+    bottom: 0;
+    animation: progressBarTriangle 0.5s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes progressBarTriangle {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 94%;
+    }
+  }
+}

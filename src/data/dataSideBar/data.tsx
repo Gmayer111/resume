@@ -23,7 +23,7 @@ export const navItems: TNavItems[] = [
     content: "A PROPOS",
   },
   {
-    path: "/parcours",
+    path: "/resume",
     icon: <AcademicCapIcon height={21} width={20} />,
     content: "PARCOURS",
   },

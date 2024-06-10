@@ -1,5 +1,3 @@
-import React from "react";
-
 export type TMainLayoutProps = {
   children: React.ReactNode;
   headingTitle?: string;

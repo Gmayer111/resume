@@ -4,7 +4,7 @@ import "assets/Styles/Resume.scss";
 import BlockResume from "components/UI/BlockResume";
 import ResumeTitle from "components/UI/ResumeTitle";
 import BlockMeasure from "components/UI/BlockMeasure";
-import dataResume from "data/dataResume/data";
+import dataResume from "data/home-page/data";
 import degrees from "data/dataDegrees/data";
 import technos from "data/dataTechnos/data";
 
