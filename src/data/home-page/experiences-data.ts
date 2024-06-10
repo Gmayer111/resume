@@ -5,7 +5,7 @@ export const experiencesData: TListItem[] = [
     title: "Expériences",
     items: [
       {
-        mainTitle: "Développeur Front-end",
+        mainTitle: "Développeur Fullstack/Frontend",
         subTitle: "Curecall",
         link: "https://www.curecall.fr/",
         content:

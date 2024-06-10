@@ -1,25 +1,24 @@
 import { TSkillsItems } from "types/resume";
 
-
 export const skillsData: TSkillsItems[] = [
   {
     title: "conception",
     items: [
       {
         itemTitle: "Users story",
+        level: 80,
+      },
+      {
+        itemTitle: "Architecture",
+        level: 70,
+      },
+      {
+        itemTitle: "Figma",
         level: 60,
       },
       {
-        itemTitle: "TypeScript",
-        level: 50,
-      },
-      {
-        itemTitle: "Design system",
-        level: 60,
-      },
-      {
-        itemTitle: "Conception",
-        level: 60,
+        itemTitle: "Gestion de projet (SCRUM)",
+        level: 80,
       },
     ],
   },
@@ -27,20 +26,20 @@ export const skillsData: TSkillsItems[] = [
     title: "Technologies",
     items: [
       {
-        itemTitle: "Git",
-        level: 50,
+        itemTitle: "React / Next.js",
+        level: 70,
       },
       {
-        itemTitle: "Bash/ZSH",
-        level: 40,
+        itemTitle: "Javascript",
+        level: 70,
       },
       {
-        itemTitle: "CI/CD",
-        level: 30,
+        itemTitle: "Typescript",
+        level: 60,
       },
       {
-        itemTitle: "Docker",
-        level: 20,
+        itemTitle: "CSS/SCSS",
+        level: 70,
       },
     ],
   },
