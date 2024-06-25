@@ -1,6 +1,6 @@
 {
-  "name": "resume",
-  "homepage": "https://gael-mayer.fr",
+  "name": "gm-cv",
+  "homepage": "https://gael-mayer-resume.vercel.app/",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
