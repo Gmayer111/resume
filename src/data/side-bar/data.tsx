@@ -3,12 +3,7 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  AcademicCapIcon,
-  BriefcaseIcon,
-  HomeIcon,
-  UserIcon,
-} from "@heroicons/react/24/solid";
+import { AcademicCapIcon, HomeIcon, UserIcon } from "@heroicons/react/24/solid";
 import { TBottomNavItems, TNavItems } from "types/sidebar";
 
 export const navItems: TNavItems[] = [
@@ -26,11 +21,6 @@ export const navItems: TNavItems[] = [
     path: "/resume",
     icon: <AcademicCapIcon height={21} width={20} />,
     content: "PARCOURS",
-  },
-  {
-    path: "/portfolio",
-    icon: <BriefcaseIcon height={21} width={20} />,
-    content: "PORTFOLIO",
   },
 ];
 
