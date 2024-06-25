@@ -4,8 +4,8 @@ import SideBar from "components/layout/sidebar.component";
 import { playfair_Display, roboto } from "utils/font";
 
 export const metadata: Metadata = {
-  title: "React App",
-  description: "Web site created with Next.js.",
+  title: "Gaël Mayer - CV ",
+  description: "Mon CV en ligne",
 };
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang="fr"
       className={`${roboto.variable} ${playfair_Display.variable}`}
     >
       <body>

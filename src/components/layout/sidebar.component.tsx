@@ -1,13 +1,13 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { bottomNavItems, navItems } from "data/dataSideBar/data";
 import { useWindowSize } from "hooks/use-window-size";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import { useEffect, useRef, useState } from "react";
 import { useClickOutside } from "hooks/use-click-outside";
 import ProfilImg from "../../../public/Images/profil.jpg";
 import Image from "next/image";
+import { bottomNavItems, navItems } from "data/side-bar/data";
 
 const Header = () => {
   const pathName = usePathname();
