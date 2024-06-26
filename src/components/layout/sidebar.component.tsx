@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <header>
       {isResponsive && (
-        <div className="responsiveTopBar">
+        <div className="responsiveTopbar">
           <h2>GAEL MAYER</h2>
           <button onClick={() => setDisplayNavbar(true)}>
             <Bars3Icon height={35} width={35} />
@@ -38,7 +38,11 @@ const Header = () => {
       )}
       <div
         ref={ref}
-        className={displayNavbar ? "responsiveSidebar" : "desktopSidebar"}
+        className={`desktopSidebar ${
+          displayNavbar ? "responsiveSidebar" : "hiddenResponsiveSidebar"
+        }
+          
+        `}
       >
         <div className="topSidebar">
           <div>
@@ -48,12 +52,13 @@ const Header = () => {
           <nav>
             <ul>
               {navItems.map((linkComponentItem) => (
-                <li>
+                <li key={linkComponentItem.path}>
                   <Link
                     className={
                       pathName === linkComponentItem.path ? "active" : ""
                     }
                     href={linkComponentItem.path}
+                    onClick={toggle}
                   >
                     <span>{linkComponentItem.icon}</span>
                     {linkComponentItem.content}
@@ -63,7 +68,7 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-        <div className="headBottomPart">
+        <div className="bottomSidebar">
           {bottomNavItems.map((bottomNavItem) => (
             <Link
               className={
@@ -72,6 +77,8 @@ const Header = () => {
               rel="noopener noreferrer"
               target="_blank"
               href={bottomNavItem.url}
+              onClick={toggle}
+              key={bottomNavItem.url}
             >
               {bottomNavItem.content}
             </Link>
