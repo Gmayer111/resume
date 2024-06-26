@@ -1,19 +1,19 @@
-header,
-.responsiveSidebar {
-  position: sticky;
-  top: 0;
-  background-color: #17181b;
-  color: #9c9a9a;
+header {
   z-index: 2;
-  width: 230px;
-  float: left;
 
-  .desktopSidebar,
-  .responsiveSidebar {
+  .responsiveSidebar,
+  .desktopSidebar {
+    position: sticky;
+    top: 0;
+    background-color: #17181b;
+    color: #9c9a9a;
+    z-index: 2;
+    width: 200px;
+    float: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 100vh;
   }
 
   .topSidebar > div {
@@ -84,46 +84,59 @@ header,
     color: #52bde7;
   }
 
-  .headBottomPart {
+  .bottomSidebar {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     margin: 30px 0;
-
-    svg {
-      font-size: 1.2em;
-      color: #777777;
-    }
-
-    svg:hover,
-    .stringContent:hover {
-      color: #52bde7;
-    }
-
-    .stringContent {
-      color: #777777;
-      text-align: center;
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 15px;
-      margin-top: 10px;
-    }
   }
-}
+  .bottomSidebar svg {
+    font-size: 1.2em;
+    color: #777777;
+  }
 
-@media screen and (max-width: 768px) {
-  header {
-    width: 100%;
+  .bottomSidebar svg:hover,
+  .bottomSidebar .stringContent:hover {
+    color: #52bde7;
+  }
 
-    .responsiveTopBar {
+  .bottomSidebar .stringContent {
+    color: #777777;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    position: fixed;
+
+    .responsiveSidebar,
+    .hiddenResponsiveSidebar {
+      height: 100vh;
+      position: absolute;
+      width: 190px;
+    }
+
+    .responsiveSidebar {
+      transform: translateX(-200px);
+      animation: display 0.3s ease-in-out 1ms 1 forwards;
+    }
+
+    .hiddenResponsiveSidebar {
+      transform: translateX(0px);
+      animation: hidden 1s ease-in-out 1ms 1 forwards;
+    }
+
+    .responsiveTopbar {
       height: 50px;
-      width: 100%;
+      width: 100vw;
       display: flex;
       align-items: center;
-      position: relative;
+      background-color: #17181b;
     }
 
-    .responsiveTopBar > h2 {
+    .responsiveTopbar > h2 {
       position: absolute;
       font-size: 26px;
       font-weight: 500;
@@ -133,22 +146,12 @@ header,
       width: 100%;
     }
 
-    .responsiveTopBar > button {
+    .responsiveTopbar > button {
       position: absolute;
       color: #ffffff;
       cursor: pointer;
       right: 10px;
       padding: 0;
-    }
-
-    .desktopSidebar {
-      display: none;
-    }
-
-    .responsiveSidebar {
-      height: 100vh;
-      position: absolute;
-      animation: display 0.5s ease-in-out 2ms 1 forwards;
     }
 
     @keyframes display {
@@ -158,6 +161,16 @@ header,
 
       to {
         transform: translateX(0px);
+      }
+    }
+
+    @keyframes hidden {
+      from {
+        transform: translateX(0px);
+      }
+
+      to {
+        transform: translateX(-200px);
       }
     }
   }
