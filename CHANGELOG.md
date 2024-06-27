@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/Gmayer111/resume/compare/v1.2.0...v1.3.0) (2024-06-27)
+
+
+### Features
+
+* update readme ([#17](https://github.com/Gmayer111/resume/issues/17)) ([81a11f8](https://github.com/Gmayer111/resume/commit/81a11f8e329b7108ca3ca365a7e2854824f52a3e))
+
 ## [1.2.0](https://github.com/Gmayer111/resume/compare/v1.1.0...v1.2.0) (2024-06-26)
 
 
