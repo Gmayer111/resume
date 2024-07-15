@@ -43,6 +43,23 @@
     margin-bottom: 15px;
   }
 
+  ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  ul li a:hover {
+    color: white;
+  }
+
+  ul li a span {
+    color: #00a3e1;
+  }
+
+  ul li a span:hover {
+    color: white;
+  }
+
   li > span:nth-child(1) {
     font-family: var(--font-playfair-display);
     font-size: 16px;
@@ -69,7 +86,7 @@
     height: 300px;
   }
 
-  a {
+  a:not(ul li a) {
     border: 2px solid #00a3e1;
     font-size: 14px;
     font-weight: 500;
