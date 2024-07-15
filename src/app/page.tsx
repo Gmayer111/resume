@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import HomePagePicture from "../../public/Images/homePage.jpeg";
+import HomePagePicture from "../../public/Images/HomePage.webp";
 import { useEffect, useState } from "react";
 import { TextsAnimated } from "types/home";
 import { playfair_Display } from "utils/font";
@@ -8,7 +8,7 @@ import { playfair_Display } from "utils/font";
 export default function Home() {
   const [currentText, setCurrentText] = useState<string>("");
   const textsAnimated: TextsAnimated[] = [
-    "Développeur Web",
+    "Développeur Fullstack",
     "Développeur Frontend",
     "Concepteur Développeur",
   ];

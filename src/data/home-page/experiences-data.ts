@@ -14,7 +14,7 @@ export const experiencesData: TListItem[] = [
         endDate: "2024",
       },
       {
-        mainTitle: "Développeur Back-end",
+        mainTitle: "Développeur Fullstack",
         subTitle: "Agence NWB",
         link: "https://www.nwb.fr/",
         content:
@@ -40,7 +40,7 @@ export const experiencesData: TListItem[] = [
         mainTitle: "Concepteur Développeur d'applications",
         subTitle: "Ecole O'Clock",
         link: "https://oclock.io/",
-        content: "Titre RNCP de niveau 6",
+        content: "Niveau Maîtrise",
         startDate: "2022",
         endDate: "2024",
       },

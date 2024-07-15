@@ -5,15 +5,15 @@ export const skillsData: TSkillsItems[] = [
     title: "conception",
     items: [
       {
-        itemTitle: "Users story",
-        level: 80,
-      },
-      {
-        itemTitle: "Architecture",
+        itemTitle: "Intégration | Accessibilité",
         level: 70,
       },
       {
-        itemTitle: "Figma",
+        itemTitle: "Architecture",
+        level: 60,
+      },
+      {
+        itemTitle: "Maquettage | Prototypage",
         level: 60,
       },
       {
@@ -26,20 +26,20 @@ export const skillsData: TSkillsItems[] = [
     title: "Technologies",
     items: [
       {
-        itemTitle: "React / Next.js",
+        itemTitle: "Javascript ES6",
         level: 70,
       },
       {
-        itemTitle: "Javascript",
+        itemTitle: "React | Next.js",
         level: 70,
       },
       {
-        itemTitle: "Typescript",
+        itemTitle: "TypeScript",
         level: 60,
       },
       {
-        itemTitle: "CSS/SCSS",
-        level: 70,
+        itemTitle: "Nest.js",
+        level: 50,
       },
     ],
   },
