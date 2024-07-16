@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/Gmayer111/resume/compare/v1.3.0...v1.4.0) (2024-07-16)
+
+
+### Features
+
+* clean repo and update descriptions ([#19](https://github.com/Gmayer111/resume/issues/19)) ([e90ff0d](https://github.com/Gmayer111/resume/commit/e90ff0d441bc3fbe3b3e276623728b3d922d8ced))
+
 ## [1.3.0](https://github.com/Gmayer111/resume/compare/v1.2.0...v1.3.0) (2024-06-27)
 
 
