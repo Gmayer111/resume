@@ -33,14 +33,15 @@ const About = () => {
       <div className="aboutPageContainer">
         <div>
           <div>
-            <h3>Développeur Front-end</h3>
+            <h3>Développeur Fullstack</h3>
             <p>
-              Développeur Front-end avec une appétence pour les librairies /
-              Frameworks Javascript et le langage TypeScript. <br /> J’aime
-              travailler en équipe et partager mon expertise sur chaque étape du
-              processus de conception et de développement afin d’améliorer
-              l’UI/UX d’une application mais aussi optimiser le traitement et la
-              récupération de données.
+              Développeur Fullstack orienté Frontend, j’apporte un attention
+              particulière à la résolution de problèmes complexes. J’aime aussi
+              partager mes idées créatives lors de la réalisation de nouvelles
+              fonctionnalités tout en prenant en compte les besoins de
+              l’utilisateur final. Je travail actuellement avec l’écosystème
+              Javascript couplé au langage TypeScript afin de créer des
+              applications robustes et sécurisées.
             </p>
           </div>
           <div>
@@ -49,7 +50,17 @@ const About = () => {
               {personalInformationsData.map((item) => (
                 <li>
                   <span className="title">{item.title}</span>
-                  <span className="info"> : {item.content}</span>
+                  {item.content.includes("@") ? (
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={`mailto:${item.content}`}
+                    >
+                      : <span>{item.content}</span>
+                    </Link>
+                  ) : (
+                    <span className="info"> : {item.content}</span>
+                  )}
                 </li>
               ))}
             </ul>

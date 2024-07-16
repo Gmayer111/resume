@@ -1,1 +1,4 @@
-export type TextsAnimated = "Développeur Web" | "Développeur Frontend" | "Concepteur Développeur";
+export type TextsAnimated =
+  | "Développeur Fullstack"
+  | "Développeur Frontend"
+  | "Concepteur Développeur";
