@@ -10,7 +10,6 @@ export default function Home() {
   const textsAnimated: TextsAnimated[] = [
     "Développeur Fullstack",
     "Développeur Frontend",
-    "Concepteur Développeur",
   ];
 
   useEffect(() => {
