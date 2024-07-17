@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/Gmayer111/resume/compare/v1.4.0...v1.5.0) (2024-07-17)
+
+
+### Features
+
+* update some texts ([#21](https://github.com/Gmayer111/resume/issues/21)) ([d0be3de](https://github.com/Gmayer111/resume/commit/d0be3deff138716562f29c297b9348f7547d99f2))
+
 ## [1.4.0](https://github.com/Gmayer111/resume/compare/v1.3.0...v1.4.0) (2024-07-16)
 
 
