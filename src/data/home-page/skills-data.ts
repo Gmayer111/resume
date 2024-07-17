@@ -5,16 +5,16 @@ export const skillsData: TSkillsItems[] = [
     title: "conception",
     items: [
       {
+        itemTitle: "Conception (Front / Back)",
+        level: 70,
+      },
+      {
         itemTitle: "Intégration | Accessibilité",
         level: 70,
       },
       {
-        itemTitle: "Architecture",
-        level: 60,
-      },
-      {
-        itemTitle: "Maquettage | Prototypage",
-        level: 60,
+        itemTitle: "Administration Système",
+        level: 50,
       },
       {
         itemTitle: "Gestion de projet (SCRUM)",
