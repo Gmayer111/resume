@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/Gmayer111/resume/compare/v1.5.0...v1.6.0) (2024-07-23)
+
+
+### Features
+
+* update icons pages ([#23](https://github.com/Gmayer111/resume/issues/23)) ([43ed504](https://github.com/Gmayer111/resume/commit/43ed504f05b6e1f156925afd59af25df308f413a))
+
 ## [1.5.0](https://github.com/Gmayer111/resume/compare/v1.4.0...v1.5.0) (2024-07-17)
 
 
