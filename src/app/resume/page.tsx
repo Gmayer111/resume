@@ -1,6 +1,5 @@
 "use client";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { AcademicCapIcon } from "@heroicons/react/24/solid";
 import ListItem from "components/common/list-item.component";
 import SkillItem from "components/common/skill-item.component";
 import MainLayout from "components/layout/main-layout.component";
@@ -11,7 +10,7 @@ const Resume = () => {
   return (
     <MainLayout
       headingTitle="Mon parcours"
-      headingIcon={<FontAwesomeIcon icon={faUser} />}
+      headingIcon={<AcademicCapIcon height={50} width={50} />}
     >
       <div className="resumePageContainer">
         <section>

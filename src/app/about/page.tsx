@@ -1,6 +1,5 @@
 "use client";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { UserIcon } from "@heroicons/react/24/solid";
 import MainLayout from "components/layout/main-layout.component";
 import Link from "next/link";
 import { TPersonalInformationsData } from "types/about";
@@ -28,7 +27,7 @@ const About = () => {
   return (
     <MainLayout
       headingTitle="A propos de moi"
-      headingIcon={<FontAwesomeIcon icon={faUser} />}
+      headingIcon={<UserIcon height={50} width={50} />}
     >
       <div className="aboutPageContainer">
         <div>
