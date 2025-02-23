@@ -6,5 +6,5 @@ export type TNavItems = {
 
 export type TBottomNavItems = {
   url: string;
-  content: JSX.Element | string;
+  content?: JSX.Element | string;
 };

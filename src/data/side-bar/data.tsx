@@ -3,7 +3,12 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { AcademicCapIcon, HomeIcon, UserIcon } from "@heroicons/react/24/solid";
+import {
+  AcademicCapIcon,
+  BriefcaseIcon,
+  HomeIcon,
+  UserIcon,
+} from "@heroicons/react/24/solid";
 import { TBottomNavItems, TNavItems } from "types/sidebar";
 
 export const navItems: TNavItems[] = [
@@ -20,7 +25,12 @@ export const navItems: TNavItems[] = [
   {
     path: "/resume",
     icon: <AcademicCapIcon height={21} width={20} />,
-    content: "PARCOURS",
+    content: "EXPERIENCES",
+  },
+  {
+    path: "/projects",
+    icon: <BriefcaseIcon height={21} width={20} />,
+    content: "REALISATIONS",
   },
 ];
 
@@ -32,10 +42,5 @@ export const bottomNavItems: TBottomNavItems[] = [
   {
     url: "https://github.com/Gmayer111",
     content: <FontAwesomeIcon icon={faGithubSquare} />,
-  },
-  {
-    url: "https://watson-vcard.netlify.app/index-dark-particles1.html#home",
-    content:
-      "Site inspired by watson-vcard.netlify.app/index-dark-particles1.html",
   },
 ];
