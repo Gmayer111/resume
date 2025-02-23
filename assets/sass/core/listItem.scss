@@ -40,6 +40,7 @@
     line-height: 26px;
     margin: 0;
     text-transform: uppercase;
+    font-family: var(--font-playfair-display);
   }
 
   div {
@@ -51,7 +52,6 @@
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 12px;
-    font-family: "Roboto", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     color: #00a3e1;

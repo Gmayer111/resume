@@ -2,31 +2,14 @@ import { TSkillsItems } from "types/resume";
 
 export const skillsData: TSkillsItems[] = [
   {
-    title: "conception",
+    title: "Frontend",
     items: [
       {
-        itemTitle: "Conception (Front / Back)",
+        itemTitle: "Javascript ES6+",
         level: 70,
       },
       {
-        itemTitle: "Intégration | Accessibilité",
-        level: 70,
-      },
-      {
-        itemTitle: "Administration Système",
-        level: 50,
-      },
-      {
-        itemTitle: "Gestion de projet (SCRUM)",
-        level: 80,
-      },
-    ],
-  },
-  {
-    title: "Technologies",
-    items: [
-      {
-        itemTitle: "Javascript ES6",
+        itemTitle: "TypeScript",
         level: 70,
       },
       {
@@ -34,12 +17,58 @@ export const skillsData: TSkillsItems[] = [
         level: 70,
       },
       {
-        itemTitle: "TypeScript",
+        itemTitle: "HTML5",
+        level: 80,
+      },
+      {
+        itemTitle: "CSS3 / SASS",
+        level: 70,
+      },
+      {
+        itemTitle: "Tailwind CSS",
+        level: 80,
+      },
+    ],
+  },
+  {
+    title: "Backend",
+    items: [
+      {
+        itemTitle: "Node.js",
         level: 60,
       },
       {
         itemTitle: "Nest.js",
+        level: 60,
+      },
+      {
+        itemTitle: "MySQL",
+        level: 70,
+      },
+      {
+        itemTitle: "GraphQL/Appolo",
         level: 50,
+      },
+    ],
+  },
+  {
+    title: "outils / tests / CI/CD",
+    items: [
+      {
+        itemTitle: "Jest / Testing Library",
+        level: 70,
+      },
+      {
+        itemTitle: "Github Actions",
+        level: 70,
+      },
+      {
+        itemTitle: "Docker",
+        level: 50,
+      },
+      {
+        itemTitle: "Git",
+        level: 70,
       },
     ],
   },
