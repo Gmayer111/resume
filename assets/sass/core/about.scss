@@ -22,6 +22,7 @@
   h3 {
     font-size: 22px;
     font-weight: 700;
+    font-family: var(--font-playfair-display);
   }
 
   p {
@@ -61,11 +62,12 @@
   }
 
   li > span:nth-child(1) {
-    font-family: var(--font-playfair-display);
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.5px;
     border-bottom: 2px solid #00a3e1;
+    font-family: var(--font-playfair-display);
+
     position: relative;
     display: inline-block;
     margin-right: 6px;
