@@ -5,7 +5,7 @@ import { useWindowSize } from "hooks/use-window-size";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import { useEffect, useRef, useState } from "react";
 import { useClickOutside } from "hooks/use-click-outside";
-import ProfilImg from "../../../public/Images/profil.jpg";
+import ProfilImg from "../../../public/Images/profil_2.jpg";
 import Image from "next/image";
 import { bottomNavItems, navItems } from "data/side-bar/data";
 
