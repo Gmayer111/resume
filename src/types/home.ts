@@ -1,1 +1,1 @@
-export type TextsAnimated = "Développeur Fullstack" | "Développeur JS/TS";
+export type TextsAnimated = "Fullstack" | "JS/TS";

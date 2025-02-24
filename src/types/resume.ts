@@ -21,3 +21,13 @@ export type TSkills = {
   itemTitle: string;
   level: number;
 };
+
+export type TProjectsItems = {
+  category: string;
+  title: string;
+  picture: any;
+  languages: projectsLanguages[];
+  link: string;
+};
+
+type projectsLanguages = "NEXTJS" | "JAVASCRIPT" | "TYPESCRIPT";
