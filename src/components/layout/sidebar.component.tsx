@@ -2,12 +2,57 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useWindowSize } from "hooks/use-window-size";
-import { Bars3Icon } from "@heroicons/react/24/solid";
+import {
+  AcademicCapIcon,
+  Bars3Icon,
+  BriefcaseIcon,
+  HomeIcon,
+  UserIcon,
+} from "@heroicons/react/24/solid";
 import { useEffect, useRef, useState } from "react";
 import { useClickOutside } from "hooks/use-click-outside";
 import ProfilImg from "../../../public/Images/profil_2.jpg";
 import Image from "next/image";
-import { bottomNavItems, navItems } from "data/side-bar/data";
+import { TBottomNavItems, TNavItems } from "types/sidebar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithubSquare,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
+
+export const navItems: TNavItems[] = [
+  {
+    path: "/",
+    icon: <HomeIcon height={21} width={20} />,
+    content: "ACCUEIL",
+  },
+  {
+    path: "/about",
+    icon: <UserIcon height={21} width={20} />,
+    content: "A PROPOS",
+  },
+  {
+    path: "/resume",
+    icon: <AcademicCapIcon height={21} width={20} />,
+    content: "EXPERIENCES",
+  },
+  {
+    path: "/projects",
+    icon: <BriefcaseIcon height={21} width={20} />,
+    content: "REALISATIONS",
+  },
+];
+
+export const bottomNavItems: TBottomNavItems[] = [
+  {
+    url: "https://www.linkedin.com/in/ga%C3%ABl-mayer-6b8716234/",
+    content: <FontAwesomeIcon icon={faLinkedinIn} />,
+  },
+  {
+    url: "https://github.com/Gmayer111",
+    content: <FontAwesomeIcon icon={faGithubSquare} />,
+  },
+];
 
 const Header = () => {
   const pathName = usePathname();

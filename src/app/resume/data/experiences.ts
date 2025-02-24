@@ -1,15 +1,15 @@
 import { TListItem } from "types/resume";
 
-export const experiencesData: TListItem[] = [
+export const experiences: TListItem[] = [
   {
     title: "Expériences",
     items: [
       {
-        mainTitle: "Développeur Fullstack/Frontend",
+        mainTitle: "Développeur Fullstack",
         subTitle: "Curecall",
         link: "https://www.curecall.fr/",
         content:
-          "Projet de migration technologique : React vers Next.js et changement de version majeure de Next.js. Développement de packages npm et réutilisabilité du code",
+          "Conception et développement de composants métiers et projet de migration technologique (React vers Next.js).",
         startDate: "2022",
         endDate: "2024",
       },
@@ -40,7 +40,7 @@ export const experiencesData: TListItem[] = [
         mainTitle: "Concepteur Développeur d'applications",
         subTitle: "Ecole O'Clock",
         link: "https://oclock.io/",
-        content: "Niveau Maîtrise",
+        content: "Niveau Maîtrise / Titre RNCP de niveau 6",
         startDate: "2022",
         endDate: "2024",
       },

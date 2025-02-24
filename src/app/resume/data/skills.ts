@@ -1,6 +1,6 @@
 import { TSkillsItems } from "types/resume";
 
-export const skillsData: TSkillsItems[] = [
+export const skills: TSkillsItems[] = [
   {
     title: "Frontend",
     items: [
