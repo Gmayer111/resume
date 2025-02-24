@@ -61,10 +61,12 @@
 .project-items-container ul {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .projects-img-container img {
+  margin: 1rem;
   border-radius: 10px;
   width: 300px;
   height: 250px;

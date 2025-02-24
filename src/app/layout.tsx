@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../../assets/sass/core.scss";
+import "../../assets/style/core.scss";
 import SideBar from "components/layout/sidebar.component";
 import { Playfair_Display, Roboto } from "next/font/google";
 
