@@ -1,16 +1,12 @@
 "use client";
 import Image from "next/image";
-import HomePagePicture from "../../public/Images/HomePage.webp";
+import HomePagePicture from "../../public/Images/sweden.jpeg";
 import { useEffect, useState } from "react";
 import { TextsAnimated } from "types/home";
-import { playfair_Display } from "utils/font";
 
 export default function Home() {
   const [currentText, setCurrentText] = useState<string>("");
-  const textsAnimated: TextsAnimated[] = [
-    "Développeur Fullstack",
-    "Développeur Frontend",
-  ];
+  const textsAnimated: TextsAnimated[] = ["JS/TS", "Fullstack"];
 
   useEffect(() => {
     let words = textsAnimated;
@@ -33,17 +29,17 @@ export default function Home() {
       <Image src={HomePagePicture} alt="Image de la page d'accueil" />
       <div>
         <h1>
-          <span className={playfair_Display.className}>GAEL</span>
+          <span>GAEL</span>
           <span> MAYER</span>
         </h1>
         <p>
-          <span>Je suis </span>
           <span>
+            Développeur
             {currentText === "" && <b>{textsAnimated[0]}</b>}
             {textsAnimated
               .filter((textAnimated) => textAnimated === currentText)
               .map((item) => (
-                <b>{item}</b>
+                <b> {item}</b>
               ))}
           </span>
         </p>

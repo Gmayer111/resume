@@ -21,6 +21,10 @@ const personalInformationsData: TPersonalInformationsData[] = [
     title: "Mail",
     content: "gaelmayer@yahoo.fr",
   },
+  {
+    title: "Mobile",
+    content: "06 43 22 55 32",
+  },
 ];
 
 const About = () => {
@@ -32,15 +36,23 @@ const About = () => {
       <div className="aboutPageContainer">
         <div>
           <div>
-            <h3>Développeur Fullstack</h3>
             <p>
-              Développeur Fullstack orienté Frontend, j’apporte un attention
-              particulière à la résolution de problèmes complexes. J’aime aussi
-              partager mes idées créatives lors de la réalisation de nouvelles
-              fonctionnalités tout en prenant en compte les besoins de
-              l’utilisateur final. Je travail actuellement avec l’écosystème
-              Javascript couplé au langage TypeScript afin de créer des
-              applications robustes et sécurisées.
+              Développeur Fullstack dynamique et investi, j’observe de près la
+              liaison amoureuse entre la librairie React et le langage
+              TypeScript afin d’élaborer des interfaces sécurisées et
+              optimisées. <br />
+              <br /> J’aime également m’immiscer dans les affaires côté serveur,
+              pour manipuler les données relationnelles (ou pas &#128521;) afin
+              de créer des API protégées et complètes pour fournir les données
+              nécessaires à nos chers utilisateurs.
+              <br />
+              <br />
+              Bien évidemment, il me faut être AGILE lors de ces observations,
+              afin de concevoir des fonctionnalités où <b>maintenabilité</b> est
+              le maître mot.
+              <br />
+              <br />
+              Si vous souhaitez échanger, je suis joignable par mail.
             </p>
           </div>
           <div>
@@ -67,7 +79,7 @@ const About = () => {
         </div>
         <div>
           <Link
-            href={"/CV_Gaël_Mayer.pdf"}
+            href={"/Images/CV_Gaël_Mayer.pdf"}
             target="_blank"
             rel="noopener noreferrer"
             download

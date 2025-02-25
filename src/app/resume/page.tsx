@@ -3,8 +3,8 @@ import { AcademicCapIcon } from "@heroicons/react/24/solid";
 import ListItem from "components/common/list-item.component";
 import SkillItem from "components/common/skill-item.component";
 import MainLayout from "components/layout/main-layout.component";
-import { experiencesData } from "data/home-page/experiences-data";
-import { skillsData } from "data/home-page/skills-data";
+import { experiences } from "./data/experiences";
+import { skills } from "./data/skills";
 
 const Resume = () => {
   return (
@@ -14,13 +14,13 @@ const Resume = () => {
     >
       <div className="resumePageContainer">
         <section>
-          {experiencesData.map((experienceData) => (
+          {experiences.map((experience) => (
             <div>
               <div>
-                <h3>{experienceData.title}</h3>
+                <h3>{experience.title}</h3>
               </div>
               <ul>
-                {experienceData.items.map((item) => (
+                {experience.items.map((item) => (
                   <ListItem
                     mainTitle={item.mainTitle}
                     subTitle={item.subTitle}
@@ -35,12 +35,12 @@ const Resume = () => {
           ))}
         </section>
         <section>
-          {skillsData.map((skillData) => (
+          {skills.map((skill) => (
             <div>
               <div>
-                <h3>{skillData.title}</h3>
+                <h3>{skill.title}</h3>
               </div>
-              {skillData.items.map((item) => (
+              {skill.items.map((item) => (
                 <SkillItem itemTitle={item.itemTitle} level={item.level} />
               ))}
             </div>
