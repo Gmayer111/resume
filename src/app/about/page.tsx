@@ -46,8 +46,8 @@ const About = () => {
               optimisées. <br />
               <br /> J’aime également m’immiscer dans les affaires côté serveur,
               pour manipuler les données relationnelles (ou pas &#128521;) afin
-              de créer des API protégées et complètes pour fournir les données
-              nécessaires à nos chers utilisateurs.
+              de créer des API complètes et fournir les données nécessaires à
+              nos chers utilisateurs.
               <br />
               <br />
               Bien évidemment, il me faut être AGILE lors de ces observations,
