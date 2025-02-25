@@ -2,11 +2,10 @@
 import Image from "next/image";
 import HomePagePicture from "../../public/Images/sweden.jpeg";
 import { useEffect, useState } from "react";
-import { TextsAnimated } from "types/home";
 
 export default function Home() {
   const [currentText, setCurrentText] = useState<string>("");
-  const textsAnimated: TextsAnimated[] = ["JS/TS", "Fullstack"];
+  const textsAnimated: string[] = ["JS/TS", "Fullstack"];
 
   useEffect(() => {
     let words = textsAnimated;
