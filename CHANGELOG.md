@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/Gmayer111/resume/compare/v2.1.0...v2.2.0) (2025-02-25)
+
+
+### Features
+
+* update experiences detail ([#30](https://github.com/Gmayer111/resume/issues/30)) ([7a2ff70](https://github.com/Gmayer111/resume/commit/7a2ff70eac73e0d530c2dbc0cf2a7855b00486c1))
+
 ## [2.1.0](https://github.com/Gmayer111/resume/compare/v2.0.0...v2.1.0) (2025-02-25)
 
 
