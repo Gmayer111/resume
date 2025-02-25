@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/Gmayer111/resume/compare/v2.0.0...v2.1.0) (2025-02-25)
+
+
+### Features
+
+* update about and resume pages details & remove unused types ([#27](https://github.com/Gmayer111/resume/issues/27)) ([c132fa3](https://github.com/Gmayer111/resume/commit/c132fa3a24edf294142be75efa505e469b6a9a81))
+
 ## [2.0.0](https://github.com/Gmayer111/resume/compare/v1.6.0...v2.0.0) (2025-02-25)
 
 
