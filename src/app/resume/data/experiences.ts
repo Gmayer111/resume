@@ -9,7 +9,7 @@ export const experiences: TListItem[] = [
         subTitle: "Curecall",
         link: "https://www.curecall.fr/",
         content:
-          "Conception et développement de composants métiers et projet de migration technologique (React vers Next.js).",
+          "Conception et développement de composants métiers; projet de migration technologique React vers Next.js 13.",
         startDate: "2022",
         endDate: "2024",
       },
@@ -18,7 +18,7 @@ export const experiences: TListItem[] = [
         subTitle: "Agence NWB",
         link: "https://www.nwb.fr/",
         content:
-          "Migration d’une ancienne version PHP du projet web pour un tour opérateur et développement de nouvelles fonctionnalités.",
+          "Migration d'un projet Legacy PHP vers Symfony; développement de nouvelles fonctionnalités.",
         startDate: "2022",
         endDate: "2022",
       },
@@ -40,7 +40,7 @@ export const experiences: TListItem[] = [
         mainTitle: "Concepteur Développeur d'applications",
         subTitle: "Ecole O'Clock",
         link: "https://oclock.io/",
-        content: "Niveau Maîtrise / Titre RNCP de niveau 6",
+        content: "Niveau Maîtrise / Titre de niveau bac+4",
         startDate: "2022",
         endDate: "2024",
       },

@@ -26,8 +26,8 @@ export type TProjectsItems = {
   category: string;
   title: string;
   picture: any;
-  languages: projectsLanguages[];
+  languages: TProjectsLanguages[];
   link: string;
 };
 
-type projectsLanguages = "NEXTJS" | "JAVASCRIPT" | "TYPESCRIPT";
+type TProjectsLanguages = "NEXTJS" | "JAVASCRIPT" | "TYPESCRIPT";

@@ -1,10 +1,13 @@
-"use client";
 import { UserIcon } from "@heroicons/react/24/solid";
 import MainLayout from "components/layout/main-layout.component";
 import Link from "next/link";
-import { TPersonalInformationsData } from "types/about";
 
-const personalInformationsData: TPersonalInformationsData[] = [
+type TProfilDetails = {
+  title: string;
+  content: string;
+};
+
+const profilDetails: TProfilDetails[] = [
   {
     title: "Nom",
     content: "Gaël Mayer",
@@ -58,19 +61,19 @@ const About = () => {
           <div>
             <h3>Informations personnelles</h3>
             <ul>
-              {personalInformationsData.map((item) => (
+              {profilDetails.map((profilDetail) => (
                 <li>
-                  <span className="title">{item.title}</span>
-                  {item.content.includes("@") ? (
+                  <span className="title">{profilDetail.title}</span>
+                  {profilDetail.content.includes("@") ? (
                     <Link
                       target="_blank"
                       rel="noopener noreferrer"
-                      href={`mailto:${item.content}`}
+                      href={`mailto:${profilDetail.content}`}
                     >
-                      : <span>{item.content}</span>
+                      : <span>{profilDetail.content}</span>
                     </Link>
                   ) : (
-                    <span className="info"> : {item.content}</span>
+                    <span className="info"> : {profilDetail.content}</span>
                   )}
                 </li>
               ))}
