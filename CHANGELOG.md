@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/Gmayer111/resume/compare/v1.6.0...v2.0.0) (2025-02-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* refactoring app and update pages details ([#25](https://github.com/Gmayer111/resume/issues/25))
+
+### Features
+
+* refactoring app and update pages details ([#25](https://github.com/Gmayer111/resume/issues/25)) ([d5d2d4a](https://github.com/Gmayer111/resume/commit/d5d2d4a4406a5ca8385e5a5cc03ebbc17e748cce))
+
 ## [1.6.0](https://github.com/Gmayer111/resume/compare/v1.5.0...v1.6.0) (2024-07-23)
 
 
