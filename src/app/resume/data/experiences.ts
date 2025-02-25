@@ -10,6 +10,15 @@ export const experiences: TListItem[] = [
         link: "https://www.curecall.fr/",
         content:
           "Conception et développement de composants métiers; projet de migration technologique React vers Next.js 13.",
+        startDate: "2024",
+        endDate: "2025",
+      },
+      {
+        mainTitle: "Développeur Fullstack",
+        subTitle: "Curecall",
+        link: "https://www.curecall.fr/",
+        content:
+          "Conception et développement de composants métiers; projet de migration technologique React vers Next.js 13.",
         startDate: "2022",
         endDate: "2024",
       },
