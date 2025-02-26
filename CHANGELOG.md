@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/Gmayer111/resume/compare/v2.2.0...v2.3.0) (2025-02-26)
+
+
+### Features
+
+* create theme provider ([#32](https://github.com/Gmayer111/resume/issues/32)) ([aad5450](https://github.com/Gmayer111/resume/commit/aad54507d686ecf676e6446c110b29aba89aca6e))
+
 ## [2.2.0](https://github.com/Gmayer111/resume/compare/v2.1.0...v2.2.0) (2025-02-25)
 
 
