@@ -24,7 +24,7 @@
     left: 0;
     height: 100%;
     animation: progressBar 1s;
-    background-color: #00a3e1;
+    background-color: var(--main-color);
     animation-fill-mode: both;
     text-align: end;
     display: flex;
@@ -58,7 +58,7 @@
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom: 25px solid #00a3e1;
+    border-bottom: 25px solid var(--main-color);
     bottom: 0;
     animation: progressBarTriangle 0.5s;
     animation-fill-mode: both;

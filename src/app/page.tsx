@@ -1,11 +1,13 @@
 "use client";
 import Image from "next/image";
 import HomePagePicture from "../../public/Images/sweden.jpeg";
-import { useEffect, useState } from "react";
+import { CSSProperties, useEffect, useState } from "react";
+import { useThemeProvider } from "providers/theme-context.provider";
 
 export default function Home() {
   const [currentText, setCurrentText] = useState<string>("");
   const textsAnimated: string[] = ["JS/TS", "Fullstack"];
+  const { color } = useThemeProvider();
 
   useEffect(() => {
     let words = textsAnimated;
@@ -24,7 +26,10 @@ export default function Home() {
   }, []);
 
   return (
-    <section className="homePageContainer">
+    <section
+      className={`homePageContainer`}
+      style={{ "--main-color": color } as CSSProperties}
+    >
       <Image src={HomePagePicture} alt="Image de la page d'accueil" />
       <div>
         <h1>

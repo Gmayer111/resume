@@ -1,3 +1,7 @@
+"use client";
+import { useThemeProvider } from "providers/theme-context.provider";
+import { CSSProperties } from "react";
+
 export type TMainLayoutProps = {
   children: React.ReactNode;
   headingTitle?: string;
@@ -9,8 +13,13 @@ const MainLayout = ({
   headingTitle,
   headingIcon,
 }: TMainLayoutProps) => {
+  const { color } = useThemeProvider();
+
   return (
-    <section className="mainLayout">
+    <section
+      className="mainLayout"
+      style={{ "--main-color": color } as CSSProperties}
+    >
       <div>
         <div>
           <h2 className="title">{headingTitle}</h2>

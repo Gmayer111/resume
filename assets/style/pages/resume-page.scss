@@ -48,7 +48,7 @@
     letter-spacing: 0.5px;
     padding: 5px 10px;
     color: #ffffff;
-    border-bottom: 2px solid #00a3e1;
+    border-bottom: 2px solid var(--main-color);
     font-family: var(--font-playfair-display);
   }
 
@@ -59,7 +59,7 @@
     width: 2px;
     height: 4px;
     bottom: 0;
-    background-color: #00a3e1;
+    background-color: var(--main-color);
   }
 
   h3::before {
