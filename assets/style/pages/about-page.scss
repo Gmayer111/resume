@@ -48,7 +48,7 @@
   }
 
   ul li a span {
-    color: #00a3e1;
+    color: var(--main-color);
   }
 
   ul li a span:hover {
@@ -59,7 +59,7 @@
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.5px;
-    border-bottom: 2px solid #00a3e1;
+    border-bottom: 2px solid var(--main-color);
     font-family: var(--font-playfair-display);
 
     position: relative;
@@ -83,10 +83,10 @@
   }
 
   a:not(ul li a) {
-    border: 2px solid #00a3e1;
+    border: 2px solid var(--main-color);
     font-size: 14px;
     font-weight: 500;
-    color: #00a3e1;
+    color: var(--main-color);
     padding: 10px 20px;
     text-decoration: none;
     position: relative;
@@ -120,7 +120,7 @@
 
   a:hover::after,
   a:hover::before {
-    background-color: #00a3e1;
+    background-color: var(--main-color);
     width: 50%;
   }
 

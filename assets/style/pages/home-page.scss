@@ -32,7 +32,7 @@
   }
 
   h1 span:nth-child(2) {
-    color: #0f3bec;
+    color: var(--main-color);
     font-weight: 900;
   }
 
@@ -77,7 +77,7 @@
 
   p span b {
     line-height: 20px;
-    border-bottom: 2px solid #0f3bec;
+    border-bottom: 2px solid var(--main-color);
     padding-left: 5px;
   }
 

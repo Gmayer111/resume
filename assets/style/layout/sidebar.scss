@@ -39,7 +39,7 @@ header {
     font-size: 20px;
     font-family: var(--font-playfair-display);
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    background-color: #00a3e1;
+    background-color: var(--main-color);
     opacity: 0.8;
     color: white;
   }
@@ -83,7 +83,7 @@ header {
   }
 
   .topSidebar nav a:hover {
-    color: #52bde7;
+    color: var(--main-color);
   }
 
   .bottomSidebar {
@@ -99,7 +99,7 @@ header {
 
   .bottomSidebar svg:hover,
   .bottomSidebar .stringContent:hover {
-    color: #52bde7;
+    color: var(--main-color);
   }
 
   .bottomSidebar .stringContent {

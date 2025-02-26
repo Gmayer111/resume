@@ -7,7 +7,7 @@
   span.lineLeft {
     width: 2px;
     height: 100%;
-    background-color: #00a3e1;
+    background-color: var(--main-color);
     position: absolute;
     top: 0;
     left: -10px;
@@ -20,7 +20,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    border: 2px solid #00a3e1;
+    border: 2px solid var(--main-color);
   }
 
   span.lineLeft::after {
@@ -54,7 +54,7 @@
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #00a3e1;
+    color: var(--main-color);
   }
 
   p {

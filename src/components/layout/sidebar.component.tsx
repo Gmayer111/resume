@@ -9,7 +9,7 @@ import {
   HomeIcon,
   UserIcon,
 } from "@heroicons/react/24/solid";
-import { useEffect, useRef, useState } from "react";
+import { CSSProperties, useEffect, useRef, useState } from "react";
 import { useClickOutside } from "hooks/use-click-outside";
 import ProfilImg from "../../../public/Images/profil_2.jpg";
 import Image from "next/image";
@@ -19,6 +19,7 @@ import {
   faGithubSquare,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import { useThemeProvider } from "providers/theme-context.provider";
 
 export const navItems: TNavItems[] = [
   {
@@ -60,6 +61,7 @@ const Header = () => {
   const [isResponsive, setIsResponsive] = useState(false);
   const [displayNavbar, setDisplayNavbar] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const { color } = useThemeProvider();
 
   const toggle = () => {
     setDisplayNavbar(false);
@@ -72,7 +74,7 @@ const Header = () => {
   }, [windowSize]);
 
   return (
-    <header>
+    <header style={{ "--main-color": color } as CSSProperties}>
       {isResponsive && (
         <div className="responsiveTopbar">
           <h2>GAEL MAYER</h2>
