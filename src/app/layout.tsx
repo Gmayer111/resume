@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "../../assets/style/core.scss";
 import SideBar from "components/layout/sidebar.component";
 import { Playfair_Display, Roboto } from "next/font/google";
+import { ThemeContextProvider } from "providers/theme-context.provider";
+import PageColorSwitcher from "components/common/page-color-switcher.component";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -33,8 +35,13 @@ export default function RootLayout({
       className={`${roboto.variable} ${playfair_Display.variable}`}
     >
       <body>
-        <SideBar />
-        <main>{children}</main>
+        <ThemeContextProvider>
+          <SideBar />
+          <main>
+            <PageColorSwitcher />
+            {children}
+          </main>
+        </ThemeContextProvider>
       </body>
     </html>
   );
