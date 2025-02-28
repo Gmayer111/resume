@@ -1,6 +1,14 @@
-import { TSkillsItems } from "types/resume";
+export type TSkills = {
+  title: string;
+  items: TSkillItems[];
+};
 
-export const skills: TSkillsItems[] = [
+export type TSkillItems = {
+  itemTitle: string;
+  level: number;
+};
+
+export const skills: TSkills[] = [
   {
     title: "Frontend",
     items: [

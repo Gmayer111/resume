@@ -1,7 +1,7 @@
+import { TSkillItems } from "app/resume/data/skills";
 import { useEffect, useRef, useState } from "react";
-import { TSkills } from "types/resume";
 
-const SkillItem = ({ itemTitle, level }: TSkills) => {
+const SkillItem = ({ itemTitle, level }: TSkillItems) => {
   const progressBarRef = useRef<HTMLDivElement>(null);
   const [scrollTop, setScrollTop] = useState(0);
   const handleScroll = () => {
@@ -21,18 +21,6 @@ const SkillItem = ({ itemTitle, level }: TSkills) => {
       progressBarRef.current.style.width = `${level}%`;
     }
   }, [level]);
-
-  // WIP
-  // useEffect(() => {
-  //   let i = 0;
-  //   setInterval(() => {
-  //     if (i <= 75) {
-  //       setPercentValue(i++);
-  //     } else {
-  //       clearInterval(this);
-  //     }
-  //   }, 1000);
-  // }, []);
 
   return (
     <div className="skilItemContainer">
