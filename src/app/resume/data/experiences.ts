@@ -1,6 +1,18 @@
-import { TListItem } from "types/resume";
+export type TExperiences = {
+  title: string;
+  items: TExperienceItems[];
+};
 
-export const experiences: TListItem[] = [
+export type TExperienceItems = {
+  mainTitle: string;
+  subTitle: string;
+  link: string;
+  content: string;
+  startDate: string;
+  endDate: string;
+};
+
+export const experiences: TExperiences[] = [
   {
     title: "Expériences",
     items: [

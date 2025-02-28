@@ -1,5 +1,13 @@
 import Link from "next/link";
-import { TItems } from "types/resume";
+
+export type TLisItemProps = {
+  mainTitle: string;
+  subTitle: string;
+  link: string;
+  content: string;
+  startDate: string;
+  endDate: string;
+};
 
 function ListItem({
   mainTitle,
@@ -8,7 +16,7 @@ function ListItem({
   link,
   startDate,
   endDate,
-}: TItems) {
+}: TLisItemProps) {
   return (
     <li className="listItemContainer">
       <span className="lineLeft"></span>
