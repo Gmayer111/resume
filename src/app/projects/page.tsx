@@ -33,7 +33,7 @@ const ProjectsPage = () => {
       headingTitle="Projets"
       headingIcon={<BriefcaseIcon height={50} width={50} />}
     >
-      <div className="portfolio-page-container">
+      <div className="projects-page-container">
         <section>
           <div>
             <ul>
