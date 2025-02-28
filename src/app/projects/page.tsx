@@ -3,20 +3,15 @@ import MainLayout from "components/layout/main-layout.component";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import Restaurant from "../../../public/Images/restaurant.png";
-import Chair from "../../../public/Images/chair.png";
-import Time from "../../../public/Images/time.png";
-import Weather from "../../../public/Images/weather.png";
-import Price from "../../../public/Images/price.png";
 import {
   JavaScriptIcon,
   NextJSIcon,
   TypeScriptIcon,
 } from "../../../public/icons/icons";
 import { BriefcaseIcon } from "@heroicons/react/24/solid";
-import { TProjectsItems } from "types/resume";
+import { projects } from "./data/projects";
 
-const tabItemsCategoriesArray: string[] = ["TOUT", "DESIGN", "PRO"];
+const tabs: string[] = ["TOUT", "DESIGN", "PRO"];
 
 const languageIcons = {
   NEXTJS: <NextJSIcon />,
@@ -24,48 +19,15 @@ const languageIcons = {
   TYPESCRIPT: <TypeScriptIcon />,
 };
 
-const projectItems: TProjectsItems[] = [
-  {
-    category: "TOUT PRO",
-    title: "Restaurant Van Long",
-    picture: Restaurant,
-    languages: ["NEXTJS", "TYPESCRIPT"],
-    link: "https://van-long.fr/",
-  },
-  {
-    category: "TOUT DESIGN",
-    title: "Time tracking dashboard",
-    picture: Time,
-    languages: ["JAVASCRIPT"],
-    link: "https://confident-hamilton-fd4b0e.netlify.app/",
-  },
-  {
-    category: "TOUT DESIGN",
-    title: "Room Home Page",
-    picture: Chair,
-    languages: ["JAVASCRIPT"],
-    link: "https://amazing-gates-9da9b3.netlify.app/",
-  },
-  {
-    category: "TOUT DESIGN",
-    title: "Current weather",
-    picture: Weather,
-    languages: ["JAVASCRIPT"],
-    link: "https://zealous-chandrasekhar-d4a7e9.netlify.app/",
-  },
-  {
-    category: "TOUT DESIGN",
-    title: "Le juste prix",
-    picture: Price,
-    languages: ["JAVASCRIPT"],
-    link: "https://nervous-fermat-f4b9a5.netlify.app/",
-  },
-];
-
 const ProjectsPage = () => {
-  const [tabItemsCategories, setTabItemsCategories] = useState(
-    tabItemsCategoriesArray[0]
-  );
+  const [currentTab, setCurrentTab] = useState(tabs[0]);
+
+  const currentProjectsSelected =
+    currentTab === "TOUT"
+      ? projects
+      : projects.filter((projectItem) => {
+          return projectItem.category.includes(currentTab);
+        });
   return (
     <MainLayout
       headingTitle="Projets"
@@ -75,12 +37,13 @@ const ProjectsPage = () => {
         <section>
           <div>
             <ul>
-              {tabItemsCategoriesArray.map((tabItemsCategory, index) => (
+              {tabs.map((tab, index) => (
                 <li
-                  key={`${tabItemsCategory}-${index}`}
-                  onClick={() => setTabItemsCategories(tabItemsCategory)}
+                  key={`${tab}-${index}`}
+                  onClick={() => setCurrentTab(tab)}
+                  className={tab === currentTab ? "currentTabActived" : ""}
                 >
-                  {tabItemsCategory}
+                  {tab}
                 </li>
               ))}
             </ul>
@@ -89,32 +52,36 @@ const ProjectsPage = () => {
         <section>
           <div className="project-items-container">
             <ul>
-              {projectItems.map((projectItem, index) => {
+              {currentProjectsSelected.map((currentProjectSelected, index) => {
                 return (
-                  projectItem.category.includes(tabItemsCategories) && (
-                    <div
-                      key={`${projectItem.title}-${index}`}
-                      className="projects-img-container"
-                    >
-                      <Link href={projectItem.link} target="_blank">
-                        <div className="projects-img">
-                          <Image
-                            src={projectItem.picture}
-                            alt="Image de test"
-                          />
-                          <div>
-                            <h3>{projectItem.title}</h3>
-                            <div className="project-item-language">
-                              <span>{projectItem.languages.join(" | ")}</span>
-                              {projectItem.languages.map((language) => (
-                                <div>{languageIcons[language]}</div>
-                              ))}
-                            </div>
+                  <li
+                    key={`${currentProjectSelected.title}-${index}`}
+                    className="projects-img-container"
+                  >
+                    <Link href={currentProjectSelected.link} target="_blank">
+                      <div className="projects-img">
+                        <Image
+                          src={currentProjectSelected.picture}
+                          alt={`${currentProjectSelected.title} image`}
+                        />
+                        <div>
+                          <h3>{currentProjectSelected.title}</h3>
+                          <div className="project-item-language">
+                            <span>
+                              {currentProjectSelected.languages.join(" | ")}
+                            </span>
+                            {currentProjectSelected.languages.map(
+                              (language) => (
+                                <div key={language}>
+                                  {languageIcons[language]}
+                                </div>
+                              )
+                            )}
                           </div>
                         </div>
-                      </Link>
-                    </div>
-                  )
+                      </div>
+                    </Link>
+                  </li>
                 );
               })}
             </ul>

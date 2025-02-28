@@ -21,7 +21,7 @@
     list-style: none;
   }
 
-  section:nth-child(1) div ul li:hover {
+  .currentTabActived {
     background-color: var(--main-color);
     border-radius: 30px;
   }
@@ -63,10 +63,17 @@
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.projects-img-container {
+  margin: 1rem;
 }
 
 .projects-img-container img {
-  margin: 1rem;
+  // margin: 1rem;
   border-radius: 10px;
   width: 300px;
   height: 250px;
