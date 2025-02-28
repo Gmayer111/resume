@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.4.0](https://github.com/Gmayer111/resume/compare/v2.3.0...v2.4.0) (2025-02-28)
+
+
+### Features
+
+* improve responsive project items ([#37](https://github.com/Gmayer111/resume/issues/37)) ([a5056eb](https://github.com/Gmayer111/resume/commit/a5056ebbca86a943074e874e4c45444aea659bec))
+* move resume types within resume data ([#36](https://github.com/Gmayer111/resume/issues/36)) ([5358c82](https://github.com/Gmayer111/resume/commit/5358c8273a4adc758ea7b070b8e895f6b7baa6de))
+* refacto code behavior with styles & move data within projects ([#34](https://github.com/Gmayer111/resume/issues/34)) ([1218d31](https://github.com/Gmayer111/resume/commit/1218d31f9f5c07c33de3c9bbdf959a876d1ca0a5))
+
 ## [2.3.0](https://github.com/Gmayer111/resume/compare/v2.2.0...v2.3.0) (2025-02-26)
 
 

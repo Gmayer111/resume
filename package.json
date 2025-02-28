@@ -1,7 +1,7 @@
 {
   "name": "gm-cv",
   "homepage": "https://gael-mayer-resume.vercel.app/",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
