@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.0](https://github.com/Gmayer111/resume/compare/v2.4.0...v2.5.0) (2025-05-15)
+
+
+### Features
+
+* replace resume ([#38](https://github.com/Gmayer111/resume/issues/38)) ([1305878](https://github.com/Gmayer111/resume/commit/1305878291c97747b65a0ec36c15ef0fdaad9d99))
+
 ## [2.4.0](https://github.com/Gmayer111/resume/compare/v2.3.0...v2.4.0) (2025-02-28)
 
 
